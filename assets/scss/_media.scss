@@ -1,0 +1,14 @@
+$breakpoints: (
+  sm: 24em,
+  lg: 48em
+);
+
+@mixin breakpoint($breakpoint) {
+  @each $key, $min in $breakpoints {
+    @if $key == $breakpoint {
+      @media screen and (min-width: $min) {
+        @content;
+      }
+    }
+  }
+}

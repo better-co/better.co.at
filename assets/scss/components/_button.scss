@@ -1,0 +1,46 @@
+.c-btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  transition: all 200ms;
+  position: relative;
+
+  &--default {
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    background: white;
+    color: map-get($brand, "blue");
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0.25rem 0.5rem -0.125rem rgba(black, 0.10), 0rem 0rem 0.0625rem rgba(black, 0.2);
+
+    &:hover {
+      background-color: darken(map-get($lights, "blue"), 0.5%);
+      top: -1px;
+      box-shadow: 0rem 0.3rem 0.75rem -0.125rem rgba(black, 0.15), 0rem 0rem 0.0625rem rgba(black, 0.2);
+    }
+  }
+
+  &--primary {
+    @extend .c-btn--default;
+
+    color: map-get($lights, "blue");
+    background-color: map-get($brand, "blue");
+
+    &:hover {
+      background-color: darken(map-get($brand, "blue"), 10%);
+    }
+  }
+
+  @each $name, $color in $brand {
+    &--brand-#{$name} {
+      @extend .c-btn--default;
+      color: map-get($lights, $name);
+
+      background-color: $color;
+      &:hover {
+        background-color: darken($color, 10%);
+      }
+    }
+  }
+}

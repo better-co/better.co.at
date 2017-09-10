@@ -1,0 +1,5 @@
+export const INCREMENT = 'INCREMENT'
+export const SET = 'SET'
+export const RESET = 'RESET'
+export const UNDO = 'UNDO'
+export const PRINT = 'PRINT'

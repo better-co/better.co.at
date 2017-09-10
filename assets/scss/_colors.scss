@@ -1,0 +1,58 @@
+/// Colors
+$brand: (
+  'pink': #FF0092,
+  'orange': #FFCA1B,
+  'green': #B6FF00,
+  'blue': #228DFF,
+  'purple': #BA01FF,
+);
+
+$lights: (
+  'pink': #FFEAF6,
+  'orange': #FFFAEC,
+  'green': #F8FFEA,
+  'blue': #ECF5FF,
+  'purple': #F9EAFF,
+);
+
+$darks: (
+  'pink': #270016,
+  'orange': #261E04,
+  'green': #1B2600,
+  'blue': #051526,
+  'purple': #1B0026,
+);
+
+@each $name, $color in $brand {
+  .brand-#{$name}-text {
+    color: $color !important;
+  }
+  .brand-#{$name}-bg {
+    background-color: $color !important;
+  }
+}
+
+@each $name, $color in $lights {
+  .light-#{$name}-text {
+    color: $color !important;
+  }
+  .light-#{$name}-bg {
+    background-color: $color !important;
+  }
+}
+
+@each $name, $color in $darks {
+  .dark-#{$name}-text {
+    color: $color !important;
+  }
+  .dark-#{$name}-bg {
+    background-color: $color !important;
+  }
+  .dark-#{$name}-muted {
+    color: lighten($color, 60%) !important;
+  }
+}
+
+a {
+  color: map-get($brand, "blue");
+}
