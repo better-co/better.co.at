@@ -7,29 +7,29 @@ const defaults = {
   path: '/podcast.xml'
 }
 
-module.exports = async function podcast (moduleOptions) {
+module.exports = function podcast (moduleOptions) {
   const options = {...defaults, ...this.options.podcast, ...moduleOptions}
   const feedPath = path.resolve(this.options.srcDir, path.join('dist', options.path))
 
   this.addServerMiddleware({
     path: options.path,
-    handler: async (req, res, next) => {
-      const episodes = await axios.get('http://localhost:3000/content-api/bettercast')
-      const feed = createPodcastFeed(options, episodes)
-
-      res.setHeader('Content-Type', 'application/xml')
-      res.end(feed.xml())
+    handler: (req, res, next) => {
+      axios.get('http://localhost:3000/content-api/bettercast').then(response => {
+        const feed = createPodcastFeed(options, response.data)
+        res.setHeader('Content-Type', 'application/xml')
+        res.end(feed.xml())
+      })
     }
   })
 
   this.nuxt.plugin('build', async builder => {
     this.nuxt.plugin('generator', async (generator) => {
       generator.plugin('generate', async ({routes}) => {
-        const response = await axios.get('http://localhost:3000/content-api/bettercast')
-        const feed = createPodcastFeed(options, response.data)
-
-        fs.ensureDirSync(path.dirname(feedPath))
-        fs.writeFileSync(feedPath, feed.xml())
+        axios.get('http://localhost:3000/content-api/bettercast').then(response => {
+          const feed = createPodcastFeed(options, response.data)
+          fs.ensureDirSync(path.dirname(feedPath))
+          fs.writeFileSync(feedPath, feed.xml())
+        })
       })
     })
   })
