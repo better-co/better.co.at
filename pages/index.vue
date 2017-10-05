@@ -68,22 +68,24 @@ export default {
     PageTitle, IconGroup, IconLink, PostPreview
   },
   async asyncData ({app}) {
-    let [sections, articles] = await Promise.all([
-      app.$content('/sections').getAll(),
-      app.$content('/articles').getOnly(0, 3)
-    ])
+    // let [sections, articles] = await Promise.all([
+    //   app.$content('/sections').getAll(),
+    //   app.$content('/articles').getOnly(0, 3)
+    // ])
 
-    sections.sort((a, b) => {
-      if (a.meta.fileName < b.meta.fileName) {
-        return -1
-      }
+    // sections.sort((a, b) => {
+    //   if (a.meta.fileName < b.meta.fileName) {
+    //     return -1
+    //   }
 
-      if (a.meta.fileName > b.meta.fileName) {
-        return 1
-      }
+    //   if (a.meta.fileName > b.meta.fileName) {
+    //     return 1
+    //   }
 
-      return 0
-    })
+    //   return 0
+    // })
+    const sections = []
+    const articles = []
 
     return {
       sections,

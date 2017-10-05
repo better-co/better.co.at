@@ -8,7 +8,7 @@ const defaults = {
 }
 
 module.exports = function podcast (moduleOptions) {
-  const options = {...defaults, ...this.options.podcast, ...moduleOptions}
+  const options = Object.assign({}, defaults, this.options.podcast, moduleOptions)
   const feedPath = path.resolve(this.options.srcDir, path.join('dist', options.path))
 
   this.addServerMiddleware({
