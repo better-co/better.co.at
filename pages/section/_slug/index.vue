@@ -42,7 +42,7 @@
         <h2><i class="far fa-book fa-fw" aria-hidden="true"></i> Knowledge Base</h2>
       </div>
       <div v-for="post in kb" :key="post.permalink" class="section__guides">
-        <post-preview :post="post" :showDate="false" class="s-article"/>
+        <post-preview :post="post" :showDate="false"/>
       </div>
     </div>
   </div>
