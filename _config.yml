@@ -2,6 +2,9 @@
 title: Better.Co.At
 timezone: UTC
 collections:
+  content-articles:
+    title: Posts
+    output: true
   posts:
     title: Posts
     output: true
