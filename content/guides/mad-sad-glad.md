@@ -1,7 +1,9 @@
 ---
-title: 'Mad, Sad, Glad'
-lede: 'Offen miteinander klären: Was läuft schlecht, was gefällt uns nicht, was läuft gut?'
+title: Mad, Sad, Glad
+lede: 'Offen miteinander klären: Was läuft schlecht, was gefällt uns nicht, was läuft
+  gut?'
 ---
+
 Eine einfache Aktivität um Daten zu sammeln ist "Mad/Sad/Glad". 
 
 Jeder Teilnehmer erhält Post-its und einen Flipchart Marker. Bei den Post-its sollte es je eine Farbe für Mad, Sad und Glad geben (oder entsprechende Klebepunkte.) Für diese Aktivität sollte man sich ca. 20–25 Minuten Zeit nehmen.

@@ -1,6 +1,7 @@
 ---
 title: Teamgröße
 ---
+
 Viele Leute glauben, dass ein Scrum Team aus mindestens fünf oder mehr Personen bestehen muss.
 
 Das wird dann oft als Ausrede dafür verwendet um speziell am Anfang der Konzeption eines neuen Produktes nicht Scrum einzusetzen:

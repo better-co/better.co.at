@@ -9,7 +9,8 @@ view:
   colors:
     background: brand-blue-bg
     text: light-blue-text
-lede: "Zahlreiche neue Ideen für innovative Features. Deine Kunden werden staunen."
+lede: Zahlreiche neue Ideen für innovative Features. Deine Kunden werden staunen.
 guides:
-  - gruppendenken-vermeiden
+- gruppendenken-vermeiden
 ---
+

@@ -2,6 +2,7 @@
 title: Wie man gute User Stories schreibt
 lede: User Stories, Acceptance Criteria, Tasks
 ---
+
 Ich bin gerade dabei einem Unternehmen Scrum näher zu bringen. In Scrum gibt es das Konzept einer User Story.
 
 Was ist die Aufgabe einer User Story? In einem Satz festzuhalten, wer die Anwenderin eines Produktes ist, was sie will und warum sie es will. 

@@ -9,7 +9,9 @@ view:
   colors:
     background: brand-pink-bg
     text: light-pink-text
-lede: Die Umsetzung neuer Features dauert zu lange? Schlechte Codequalität kann hier der Auslöser sein.
+lede: Die Umsetzung neuer Features dauert zu lange? Schlechte Codequalität kann hier
+  der Auslöser sein.
 guides:
-  - swarming
+- swarming
 ---
+

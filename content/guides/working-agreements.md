@@ -1,7 +1,9 @@
 ---
 title: Working Agreements
-lede: Working Agreements sind Verhaltensregeln für gemeinsame, produktive Zusammenarbeit im Team
+lede: Working Agreements sind Verhaltensregeln für gemeinsame, produktive Zusammenarbeit
+  im Team
 ---
+
 ## Dauer
 
 10–20 Minuten

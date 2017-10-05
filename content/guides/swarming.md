@@ -2,6 +2,7 @@
 title: Swarming
 lede: Integration Hell vermeiden und besserer Code durch Swarming
 ---
+
 Oft sehe ich Scrum Teams, das in einem Sprint fünf Stories im Sprint Backlog liegen und dann am Anfang alle Stories begonnen werden. Jeder Entwickler macht eine Story.
 
 Der Burndown sieht dann so aus:

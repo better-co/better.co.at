@@ -3,6 +3,7 @@ title: Story Points sind kein Indikator für Performance
 draft: false
 author: Christoph Hochstrasser
 ---
+
 Story Points in Planning Poker oder Fast Estimation sind eine gute Art und Weise den Aufwand von Stories einer Product Owner mitzuteilen, damit sie sieht welche Backlog Items ein gutes Verhältnis zwischen Aufwand und Business Value aufweisen.
 
 Nur das Problem mit Story Points ist, dass der Aufwand durch eine Zahl ausgedrückt wird.

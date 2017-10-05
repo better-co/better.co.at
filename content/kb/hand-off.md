@@ -1,6 +1,7 @@
 ---
 title: Hand Off
 ---
+
 Ein Hand Off ist, wenn ein Team nicht ein fertiges [Product Increment](/kb/product-increment) erzeugt, sondern ein Zwischenergebnis an ein anderes Team weitergibt. Dieses andere Team verarbeitet dann dieses Zwischenergebnis weiter, übergibt wieder etwas an ein weiteres Team oder liefert das Product Increment ab.
 
 Ein klassisches Beispiel dafür ist ein Unternehmen, wo es eine Grafikabteilung und eine Umsetzungsabteilung gibt. Die Grafikabteilung redet mit den Kunden und erzeugt Grafiken. Diese Grafiken werden vom Kunden abgesegnet, dann an eine Umsetzungsabteilung weitergegeben. Die Umsetzungsabteilung setzt diese Grafiken genau so um, wie vorgegeben.

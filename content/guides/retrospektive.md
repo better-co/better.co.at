@@ -1,7 +1,9 @@
 ---
 title: Retrospektiven
-lede: Unausgesprochenes aussprechen, offen Probleme ansprechen, kontinuierlich als Team verbessern
+lede: Unausgesprochenes aussprechen, offen Probleme ansprechen, kontinuierlich als
+  Team verbessern
 ---
+
 ## Dauer
 
 1–2 Stunden pro Woche

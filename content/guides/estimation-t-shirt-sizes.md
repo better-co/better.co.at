@@ -1,6 +1,7 @@
 ---
 title: Schätzung in T-Shirt Größen
 ---
+
 ## Dauer
 
 Ungefähr 1 Stunde für ein Backlog
