@@ -84,7 +84,7 @@ export default {
 
       return 0
     })
-    const sections = []
+
     const articles = []
 
     return {
