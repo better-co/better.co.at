@@ -10,6 +10,6 @@ phases:
   build:
     commands:
       - yarn run generate
-
-artifacts:
-  files: dist/**/*
+  post_build:
+    commands:
+      - aws s3 sync dist s3://better.co.at --acl public-read --delete
