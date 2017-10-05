@@ -68,7 +68,7 @@ export default {
     PageTitle, IconGroup, IconLink, PostPreview
   },
   async asyncData ({app}) {
-    let [sections, articles] = await Promise.all([
+    let [sections] = await Promise.all([
       app.$content('/sections').getAll()
       // app.$content('/articles').getOnly(0, 3)
     ])
