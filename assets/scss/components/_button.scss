@@ -1,9 +1,33 @@
 .c-btn {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1rem;
   transition: all 200ms;
-  position: relative;
+  display: inline-block;
+  border: none;
+
+  &--lg {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    padding: 0.75rem 1rem;
+  }
+  &--lg.c-btn--primary {
+    text-shadow: 0px 1px 1px rgba(black, 0.2);
+  }
+  &--icon-r {
+    padding-right: 0.5rem;
+
+    > .fa, > .far, > .fal {
+      margin-left: 0.125rem;
+    }
+  }
+  &--icon-l {
+    padding-left: 0.5rem;
+
+    > .fa, > .far, > .fal {
+      margin-right: 0.125rem;
+    }
+  }
 
   &--default {
     cursor: pointer;
@@ -15,9 +39,12 @@
     box-shadow: 0rem 0.25rem 0.5rem -0.125rem rgba(black, 0.10), 0rem 0rem 0.0625rem rgba(black, 0.2);
 
     &:hover {
-      background-color: darken(map-get($lights, "blue"), 0.5%);
-      top: -1px;
+      background-color: lighten(map-get($lights, "blue"), 1%);
       box-shadow: 0rem 0.3rem 0.75rem -0.125rem rgba(black, 0.15), 0rem 0rem 0.0625rem rgba(black, 0.2);
+    }
+
+    .fal, .far, .fa {
+      color: rgba(map-get($darks, "blue"), 0.3);
     }
   }
 
@@ -30,16 +57,24 @@
     &:hover {
       background-color: darken(map-get($brand, "blue"), 10%);
     }
+
+    .fal, .far, .fa {
+      color: map-get($lights, "blue");
+    }
   }
 
   @each $name, $color in $brand {
     &--brand-#{$name} {
       @extend .c-btn--default;
       color: map-get($lights, $name);
-
       background-color: $color;
+
       &:hover {
         background-color: darken($color, 10%);
+      }
+
+      .fal, .far, .fa {
+        color: map-get($lights, $name);
       }
     }
   }

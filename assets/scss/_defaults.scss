@@ -1,0 +1,82 @@
+html {
+  font-family: $font-default;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  background: map-get($lights, "blue");
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  color: map-get($brand, "blue");
+  font-weight: 600;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.375rem;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 0.9375;
+}
+
+h5, h6 {
+  font-size: 1.125rem;
+  line-height: 1.333;
+  font-weight: 700;
+}
+
+.title {
+  font-size: 1.75rem;
+  line-height: 1.1428;
+  font-weight: 600;
+  margin: 0;
+}
+
+// https://blog.typekit.com/2016/08/17/flexible-typography-with-css-locks/
+@media screen and (min-width: 21em) {
+  h1 {
+    font-size: calc(1.5em + (2.0 - 1.5) * ((100vw - 21em)/(35 - 21)));
+  }
+  h2 {
+    font-size: calc(1.375em + (1.5 - 1.375) * ((100vw - 21em)/(35 - 21)));
+  }
+  .title {
+    font-size: calc(1.75em + (2.5 - 1.75) * ((100vw - 21em)/(35 - 21)));
+  }
+}
+
+@media screen and (min-width: 35em) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+}

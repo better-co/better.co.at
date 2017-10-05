@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="4px" viewBox="0 0 375 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 47 (45359) - http://www.bohemiancoding.com/sketch -->
+    <title>Prism/Gradient</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="100%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF0092" offset="0%"></stop>
+            <stop stop-color="#FFCA1B" offset="24.0631331%"></stop>
+            <stop stop-color="#B6FF00" offset="50.1263458%"></stop>
+            <stop stop-color="#228DFF" offset="73.9852072%"></stop>
+            <stop stop-color="#BA01FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Prism/Gradient" fill="url(#linearGradient-1)">
+            <rect id="Background" x="0" y="0" width="375" height="4"></rect>
+        </g>
+    </g>
+</svg>

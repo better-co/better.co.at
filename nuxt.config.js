@@ -3,7 +3,11 @@ module.exports = {
   ** Modules
   */
   modules: [
-    'nuxtent'
+    'nuxtent',
+    '~/modules/podcast'
+  ],
+  plugins: [
+    '~/plugins/focus'
   ],
   /*
   ** Headers of the page
@@ -27,20 +31,25 @@ module.exports = {
       { rel: 'stylesheet', type: 'text/css', href: 'https://use.typekit.net/ket7iit.css'}
     ],
     script: [
-    ]
+    ],
+    htmlAttrs: {
+      lang: 'de'
+    }
   },
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#3B8070' },
+  loading: { color: '#FF0092' },
   /*
   ** CSS
   */
   css: [
     'normalize.css',
-    '~/assets/scss/main.scss',
-    '~/assets/fontawesome/css/font-awesome-core.css',
-    '~/assets/fontawesome/css/font-awesome-light.css'
+    '~/assets/fontawesome/css/fontawesome-pro-core.css',
+    '~/assets/fontawesome/css/fontawesome-pro-light.css',
+    '~/assets/fontawesome/css/fontawesome-pro-regular.css',
+    '~/assets/fontawesome/css/fontawesome-pro-solid.css',
+    '~/assets/scss/main.scss'
   ],
   /*
   ** Build configuration
@@ -49,11 +58,12 @@ module.exports = {
     extractCSS: true,
 
     watch: [
-      '~/content'
+      '~/content',
+      '~/lib/data'
     ],
 
     vendor: [
-
+      'jsonp', 'qs', 'moment', 'excerpt-html', 'localforage'
     ],
 
     /*
@@ -69,5 +79,9 @@ module.exports = {
         })
       }
     }
+  },
+
+  podcast: {
+    path: 'bettercast.xml'
   }
 }

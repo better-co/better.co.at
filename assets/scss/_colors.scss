@@ -49,10 +49,6 @@ $darks: (
     background-color: $color !important;
   }
   .dark-#{$name}-muted {
-    color: lighten($color, 60%) !important;
+    color: desaturate(lighten($color, 60%), 60%) !important;
   }
-}
-
-a {
-  color: map-get($brand, "blue");
 }

@@ -2,11 +2,29 @@
   padding: 1rem;
 
   &--tb {
-    padding: 1rem 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  &--tb2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  &--b {
+    padding-bottom: 1rem;
+  }
+  &--b2 {
+    padding-bottom: 2rem;
   }
   &--lr {
     padding: 0 1rem;
   }
+}
+
+.l-container--fixed {
+  padding: 1rem;
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .l-grid {
@@ -17,6 +35,9 @@
   margin: 0;
   padding: 0;
 
+  &__col--stretch {
+    align-self: stretch;
+  }
   &__col--top {
     align-self: flex-start;
   }
@@ -26,6 +47,17 @@
   &__col--bottom {
     align-self: flex-end;
   }
+  &__col--flex {
+    display: flex;
+  }
+}
+
+.l-grid--list + .l-grid--list {
+  margin-top: 1rem;
+}
+
+.l-grid--centered {
+  justify-content: center;
 }
 
 .l-grid--right {
@@ -39,7 +71,20 @@
     padding: 1rem 0 0 1rem;
   }
 }
+.l-grid--gutters-wide {
+  margin: -2rem 0 0 -2rem;
 
+  > .l-grid__col {
+    padding: 2rem 0 0 2rem;
+  }
+}
+
+.l-grid__col--fit {
+  flex: 1;
+}
+.l-grid--reset > .l-grid__col {
+  flex: none;
+}
 .l-grid--fit > .l-grid__col {
   flex: 1;
 }
@@ -56,46 +101,32 @@
   flex: 0 0 25%;
 }
 
-@include breakpoint('sm') {
-  .l-grid--sm--fit > .l-grid__col {
+@mixin grid-breakpoint($breakpoint) {
+  .l-grid__col--#{$breakpoint}--fit {
     flex: 1;
   }
-  .l-grid--sm--full > .l-grid__col {
-    flex: 0 0 100%;
-  }
-  .l-grid--sm--1of2 > .l-grid__col {
-    flex: 0 0 50%;
-  }
-  .l-grid--sm--1of3 > .l-grid__col {
-    flex: 0 0 33.3333%;
-  }
-  .l-grid--sm--1of4 > .l-grid__col {
-    flex: 0 0 25%;
-  }
-}
-
-@include breakpoint('lg') {
-  .l-grid--lg--fit > .l-grid__col {
+  .l-grid--#{$breakpoint}--fit > .l-grid__col {
     flex: 1;
   }
-  .l-grid--lg--full > .l-grid__col {
+  .l-grid--#{$breakpoint}--full > .l-grid__col {
     flex: 0 0 100%;
   }
-  .l-grid--lg--1of2 > .l-grid__col {
+  .l-grid--#{$breakpoint}--1of2 > .l-grid__col {
     flex: 0 0 50%;
   }
-  .l-grid--lg--1of3 > .l-grid__col {
+  .l-grid--#{$breakpoint}--1of3 > .l-grid__col {
     flex: 0 0 33.3333%;
   }
-  .l-grid--lg--1of4 > .l-grid__col {
+  .l-grid--#{$breakpoint}--1of4 > .l-grid__col {
     flex: 0 0 25%;
+  }
+  .l-grid--#{$breakpoint}--reset > .l-grid__col {
+    flex: none;
   }
 }
 
-@media only screen and (min-width: 24em) {
-
-}
-
-@media only screen and (min-width: 48em) {
-
+@each $breakpoint, $width in $breakpoints {
+  @media screen and (min-width: $width) {
+    @include grid-breakpoint($breakpoint);
+  }
 }

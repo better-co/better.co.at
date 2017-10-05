@@ -1,6 +1,7 @@
 $breakpoints: (
   sm: 24em,
-  lg: 48em
+  md: 48em,
+  lg: 60em
 );
 
 @mixin breakpoint($breakpoint) {

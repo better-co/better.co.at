@@ -1,0 +1,23 @@
+a.c-nav-link {
+  display: block;
+  text-decoration: none;
+  padding: 1rem 0;
+  transition: all 200ms;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: desaturate(lighten(map-get($brand, "blue"), 10%), 40%);
+
+  &:hover {
+    color: map-get($brand, "blue");
+  }
+
+  &.nuxt-link-active {
+    font-weight: 600;
+    color: map-get($brand, "blue");
+
+    .fal, .far {
+      font-family: 'Font Awesome 5 Solid';
+    }
+  }
+}

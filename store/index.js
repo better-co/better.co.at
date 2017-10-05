@@ -1,54 +1,63 @@
 import * as types from './mutation-types'
+import localforage from 'localforage'
 
 export const plugins = []
 
 export const state = () => ({
-  counter: 0,
-  receipt: []
+  guides: []
 })
 
 export const getters = {
+  count (state) {
+    return state.guides.length
+  },
+
+  hasGuide (state) {
+    return (guide) => {
+      const hasGuide = state.guides.filter((item) => {
+        return item.permalink === guide.permalink
+      }).length > 0
+
+      return hasGuide
+    }
+  }
 }
 
 export const mutations = {
-  [types.INCREMENT] (state) {
-    state.counter++
-  },
+  [types.ADD_GUIDE] (state, {guide}) {
+    const hasGuide = state.guides.filter((item) => {
+      return typeof item !== 'undefined' && item.permalink === guide.permalink
+    }).length > 0
 
-  [types.SET] (state, {counter}) {
-    state.counter = counter
-  },
-
-  [types.RESET] (state) {
-    state.counter = 0
-  },
-
-  [types.PRINT] (state) {
-    if (state.receipt.length > 0 && state.receipt[0].counter === state.counter) {
-      return
+    if (!hasGuide) {
+      state.guides.push(guide)
     }
+  },
 
-    state.receipt.unshift({
-      counter: state.counter,
-      date: new Date()
+  [types.DELETE_GUIDE] (state, {guide}) {
+    state.guides = state.guides.filter((item) => {
+      return item.permalink !== guide.permalink
     })
+  },
+
+  [types.SET_GUIDES] (state, {guides}) {
+    state.guides = guides
   }
 }
 
 export const actions = {
-  increment ({commit}) {
-    commit(types.INCREMENT)
+  addGuide ({commit, state}, {guide}) {
+    commit(types.ADD_GUIDE, {guide})
+    return localforage.setItem('playbook', state.guides)
   },
 
-  set ({commit, state}, {counter}) {
-    commit(types.SET, {counter})
+  deleteGuide ({commit, state}, {guide}) {
+    commit(types.DELETE_GUIDE, {guide})
+    return localforage.setItem('playbook', state.guides)
   },
 
-  reset ({commit}) {
-    commit(types.RESET)
-  },
-
-  print ({commit}) {
-    commit(types.PRINT)
+  reset ({commit, state}) {
+    commit(types.SET_GUIDES, {guides: []})
+    return localforage.setItem('playbook', state.guides)
   }
 }

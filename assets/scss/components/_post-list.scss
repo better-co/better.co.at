@@ -1,0 +1,7 @@
+.c-post-list {
+  &__item + &__item {
+    margin: 2rem 0 0;
+    padding: 2rem 0 0;
+    border-top: 2px solid map-get($lights, "blue");
+  }
+}
