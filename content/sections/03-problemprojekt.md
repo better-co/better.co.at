@@ -9,8 +9,7 @@ view:
   colors:
     background: light-green-bg
     text: dark-green-text
-lede: 'Ein Problemprojekt kommt nicht von der Stelle? Deine Kunden fragen sich: „Wo
-  bleibt die Lösung?”'
+lede: 'Ein Problemprojekt kommt nicht von der Stelle? Deine Kunden fragen sich: Wo bleibt die Lösung?'
 guides:
 - retrospektive
 - mad-sad-glad
