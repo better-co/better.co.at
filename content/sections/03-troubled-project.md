@@ -15,6 +15,7 @@ guides:
 - wie-man-gute-stories-schreibt
 - po-als-teil-des-teams
 - mad-sad-glad
+- retrospektive
 kb:
 - cross-functional-team
 ---
