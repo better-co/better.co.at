@@ -40,7 +40,7 @@
       </div>
     </div>
 
-    <div class="l-container--b2">
+    <div class="l-container--b2" v-if="articles">
       <div class="s-default l-container--b">
         <h1>
           <i class="far fa-bookmark fa-fw" aria-hidden="true"></i> Unsere neusten Artikel
@@ -90,7 +90,7 @@ export default {
 
     return {
       sections,
-      articles: await app.$content('/articles').getOnly(0, 3)
+      articles: [] // await app.$content('/articles').getOnly(0, 3)
     }
   }
 }
