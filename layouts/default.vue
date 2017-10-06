@@ -4,12 +4,11 @@
       <div class="l-container" :class="headerCssClass">
         <div class="l-grid l-grid--1of2 l-grid--gutters">
           <div class="l-grid__col l-grid__col--middle fw-semibold light-blue-text">
-            Mo-Fr 08:00–16:00
-          </div>
-          <div class="l-grid__col l-grid__col--middle text-right fw-semibold">
             <a class="light-blue-text no-decoration" href="tel:+43720116665">
               <i class="fa fa-phone fa-flip-horizontal"></i> +43 720/11 66 65
-            </a>&nbsp;
+            </a>
+          </div>
+          <div class="l-grid__col l-grid__col--middle text-right fw-semibold">
             <a class="light-blue-text no-decoration" href="mailto:get@better.co.at">
               <i class="fa fa-envelope"></i> get@better.co.at
             </a>

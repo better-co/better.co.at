@@ -4,12 +4,17 @@ a.c-nav-link {
   padding: 1rem 0;
   transition: all 200ms;
   text-align: center;
-  font-size: 1.125rem;
-  font-weight: 400;
+  font-size: 0.925rem;
+  font-weight: 500;
   color: desaturate(lighten(map-get($brand, "blue"), 10%), 40%);
 
   &:hover {
     color: map-get($brand, "blue");
+  }
+
+  .fal, .far {
+    display: block;
+    margin: 0 0 0.5rem;
   }
 
   &.nuxt-link-active {
@@ -18,6 +23,17 @@ a.c-nav-link {
 
     .fal, .far {
       font-family: 'Font Awesome 5 Solid';
+    }
+  }
+}
+
+@include breakpoint('md') {
+  a.c-nav-link {
+    font-size: 1.125rem;
+
+    .fal, .far {
+      display: inline;
+      margin: 0;
     }
   }
 }
