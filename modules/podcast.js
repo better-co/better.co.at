@@ -22,9 +22,9 @@ module.exports = function podcast (moduleOptions) {
     }
   })
 
-  this.nuxt.plugin('build', async builder => {
-    this.nuxt.plugin('generator', async (generator) => {
-      generator.plugin('generate', async ({routes}) => {
+  this.nuxt.plugin('build', builder => {
+    this.nuxt.plugin('generator', (generator) => {
+      generator.plugin('generate', ({routes}) => {
         axios.get('http://localhost:3000/content-api/bettercast').then(response => {
           const feed = createPodcastFeed(options, response.data)
           fs.ensureDirSync(path.dirname(feedPath))
