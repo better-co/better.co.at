@@ -90,7 +90,7 @@ export default {
 
     return {
       sections,
-      articles: [] // await app.$content('/articles').getOnly(0, 3)
+      articles: null // await app.$content('/articles').getOnly(0, 3)
     }
   }
 }
