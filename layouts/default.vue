@@ -33,7 +33,7 @@
                   </div>
                   <div class="l-grid__col">
                     <nuxt-link class="c-nav-link" to="/bettercast">
-                      <i class="far fa-podcast" aria-hidden="true"></i>
+                      <i class="far fa-microphone-alt" aria-hidden="true"></i>
                       Podcast
                     </nuxt-link>
                   </div>

@@ -12,11 +12,11 @@ view:
 lede: 'Ein Problemprojekt kommt nicht von der Stelle? Deine Kunden fragen sich: „Wo
   bleibt die Lösung?”'
 guides:
+- retrospektive
+- mad-sad-glad
 - wie-man-gute-stories-schreibt
 - po-als-teil-des-teams
-- mad-sad-glad
-- retrospektive
 kb:
+- scrum
 - cross-functional-team
 ---
-

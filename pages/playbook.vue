@@ -1,7 +1,9 @@
 <template>
-  <div class="playbook l-container">
+  <div class="playbook">
     <div class="l-container--fixed">
-      <h1>Dein Playbook</h1>
+      <PageTitle class="text-center">
+        <h1 slot="title"><i class="far fa-book"></i> Dein Playbook</h1>
+      </PageTitle>
 
       <div class="l-container--tb">
         <div class="l-grid l-grid--right">
@@ -39,12 +41,13 @@
 
 <script>
 import PostPreview from '~/components/PostPreview'
+import PageTitle from '~/components/PageTitle'
 import { mapState, mapActions } from 'vuex'
 import * as types from '~/store/mutation-types'
 import localforage from 'localforage'
 
 export default {
-  components: {PostPreview},
+  components: {PostPreview, PageTitle},
 
   async created () {
     if (process.browser) {

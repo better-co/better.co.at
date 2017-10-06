@@ -12,7 +12,7 @@ Und viele Menschen glauben, dass man auf alles Statistik anwenden kann, wenn es 
 
 **Irrsinn.**
 
-Kurzer Hintergrund zum Grundgedanken von Scrum: Es geht darum das, was dem Nutzer/Kunden am meisten bringt, als Erstes zu liefern.
+Kurzer Hintergrund zum Grundgedanken von [Scrum](/kb/scrum): Es geht darum das, was dem Nutzer/Kunden am meisten bringt, als Erstes zu liefern.
 
 Estimations sind nur ein Mittel um der [PO](/kb/product-owner) beim Herauszufinden welche Items das genau sein sollen zu unterstützen und bei der Reihung des Backlogs zu helfen.
 

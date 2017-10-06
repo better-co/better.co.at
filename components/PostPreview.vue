@@ -16,7 +16,7 @@
 
       <footer class="post-preview__footer" v-if="typeof showDate === 'undefined' || showDate">
         <relative-date :date="post.date"/>
-        <span v-if="post.author">von {{ post.author || 'Christoph'}}</span>
+        <span v-if="author">• von {{ author }}</span>
       </footer>
     </article>
   </block-link>
@@ -30,7 +30,7 @@ import excerptHtml from 'excerpt-html'
 export default {
   components: {BlockLink, RelativeDate},
   props: [
-    'post', 'showDate', 'excerptLength'
+    'post', 'showDate', 'excerptLength', 'author'
   ],
   computed: {
     excerpt () {

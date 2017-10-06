@@ -67,7 +67,6 @@ export default {
 
   async asyncData ({app, route}) {
     const section = await app.$content('sections').get(route.path)
-    console.log(section)
 
     const guides = section.guides
       ? await Promise.all(section.guides.map((slug) => {

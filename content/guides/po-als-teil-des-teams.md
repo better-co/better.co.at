@@ -9,7 +9,7 @@ In allen Teams, die das praktizierten, gab es dadurch nur Probleme:
 
 - POs, die nicht bei Backlog Refinement/Estimation anwesend waren, dadurch nicht sofort Dinge beantworten und klarstellen konnten.
 - Acceptance Testing, das erst nach dem Sprint Ende passiert und so das Team im nächsten Sprint mit Tweaks zu Stories aus dem letzten Sprint ablenken.
-- Eine [Hand Off]() Situation zwischen PO und Team, wo Stories zu detailliert beschrieben sind.
+- Eine [Hand Off](/kb/hand-off) Situation zwischen PO und Team, wo Stories zu detailliert beschrieben sind.
 - Man kommt oft erst bei der Sprint Review drauf, dass die Story falsch verstanden wurde und der PO eigentlich etwas ganz anderes gemeint hatte.
 
 Doch das sollte endlich Geschichte sein. Der Scrum Guide in der Ausgabe von 2016, schreibt:

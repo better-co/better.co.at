@@ -22,7 +22,7 @@
         <h1 slot="title" class="brand-blue-text"><i class="far fa-lightbulb"></i> Artikel</h1>
       </PageTitle>
 
-      <div class="l-container--b" v-for="post in posts" :key="post.permalink" v-if="!post.draft">
+      <div v-for="post in posts" :key="post.permalink" v-if="!post.draft">
         <post-preview :post="post" :showDate="true" />
       </div>
     </div>

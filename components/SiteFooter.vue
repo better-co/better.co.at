@@ -14,12 +14,12 @@
         &copy; 2017 Ing. Christoph Hochstrasser
       </p>
       <p>
-        <IconLink to="/" icon="fa-angle-right">
-          AGB
-        </IconLink>
-        <IconLink to="/" icon="fa-angle-right">
-          Impressum
-        </IconLink>
+        <a href="https://github.com/hochstrasserio/agb">
+          AGB<i class="fa fa-fw fa-angle-right"></i>
+        </a>
+        <nuxt-link to="/imprint">
+          Impressum<i class="fa fa-fw fa-angle-right"></i>
+        </nuxt-link>
       </p>
     </div>
   </footer>
@@ -38,6 +38,8 @@ export default {
 
 <style lang="scss" scoped>
 .site-footer {
+  padding: 0 0 1rem;
+
   &__content {
     > * + * {
       margin-top: 1rem;

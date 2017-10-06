@@ -12,4 +12,4 @@ phases:
       - yarn run generate
   post_build:
     commands:
-      - aws s3 sync dist s3://$DEPLOY_S3_BUCKET --acl public-read --delete --cache-control 'public, max-age=300'
+      - aws s3 sync dist s3://$DEPLOY_S3_BUCKET --acl public-read --delete

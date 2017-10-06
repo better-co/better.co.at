@@ -1,12 +1,10 @@
 <template>
-  <div class="l-container--fixed">
+  <div class="l-container--fixed s-default">
     <PageTitle class="text-center">
-      <h1 slot="title" class="brand-pink-text"><i class="far fa-podcast"></i> bettercast</h1>
+      <h1 slot="title" class="brand-pink-text"><i class="far fa-microphone-alt"></i> bettercast</h1>
     </PageTitle>
 
-    <div class="l-container--tb" v-for="post in episodes" :key="post.permalink">
-      <post-preview :post="post" :showDate="true" />
-    </div>
+    <post-preview v-for="post in episodes" :key="post.permalink" :post="post" :showDate="true" />
 
     <nuxt-child></nuxt-child>
   </div>
