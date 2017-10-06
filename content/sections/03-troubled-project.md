@@ -1,14 +1,14 @@
 ---
 title: Problemprojekt
 icon:
-  bg: light-green-bg
-  fg: brand-green-text
+  bg: brand-green-bg
+  fg: dark-green-text
   top: fa-bomb
   bottom: fa-alarm-clock
 view:
   colors:
-    background: brand-green-bg
-    text: light-green-text
+    background: light-green-bg
+    text: dark-green-text
 lede: 'Ein Problemprojekt kommt nicht von der Stelle? Deine Kunden fragen sich: „Wo
   bleibt die Lösung?”'
 guides:

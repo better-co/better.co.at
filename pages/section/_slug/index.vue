@@ -24,11 +24,13 @@
         </PageTitle> -->
       </div>
     </div>
+
     <div class="l-container--fixed l-container--tb" v-if="section.body">
       <div class="s-default">
         <nuxtent-body :body="section.body"/>
       </div>
     </div>
+
     <div class="l-container--tb l-container--fixed s-default" v-if="guides">
       <div class="l-container--tb">
         <h2><i class="far fa-tasks fa-fw" aria-hidden="true"></i> Guides</h2>
@@ -37,6 +39,7 @@
         <post-preview :post="post" :showDate="false"/>
       </div>
     </div>
+
     <div class="l-container--tb l-container--fixed s-default" v-if="kb">
       <div class="l-container--tb">
         <h2><i class="far fa-book fa-fw" aria-hidden="true"></i> Knowledge Base</h2>
@@ -45,6 +48,8 @@
         <post-preview :post="post" :showDate="false"/>
       </div>
     </div>
+
+    <edit-post :post="section" />
   </div>
 </template>
 
@@ -53,14 +58,16 @@ import PageTitle from '~/components/PageTitle'
 import IconGroup from '~/components/IconGroup'
 import IconLink from '~/components/IconLink'
 import PostPreview from '~/components/PostPreview'
+import EditPost from '~/components/EditPost'
 
 export default {
   components: {
-    PageTitle, IconGroup, IconLink, PostPreview
+    PageTitle, IconGroup, IconLink, PostPreview, EditPost
   },
 
   async asyncData ({app, route}) {
     const section = await app.$content('sections').get(route.path)
+    console.log(section)
 
     const guides = section.guides
       ? await Promise.all(section.guides.map((slug) => {

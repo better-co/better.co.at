@@ -16,6 +16,7 @@
 
       <footer class="post-preview__footer" v-if="typeof showDate === 'undefined' || showDate">
         <relative-date :date="post.date"/>
+        <span v-if="post.author">von {{ post.author || 'Christoph'}}</span>
       </footer>
     </article>
   </block-link>

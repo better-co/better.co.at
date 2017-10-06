@@ -49,6 +49,7 @@ module.exports = {
     '~/assets/fontawesome/css/fontawesome-pro-light.css',
     '~/assets/fontawesome/css/fontawesome-pro-regular.css',
     '~/assets/fontawesome/css/fontawesome-pro-solid.css',
+    '~/assets/fontawesome/css/fontawesome-pro-brands.css',
     '~/assets/scss/main.scss'
   ],
   /*
