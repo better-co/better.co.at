@@ -1,8 +1,8 @@
 <template>
   <div class="l-container--fixed s-default">
     <PageTitle class="text-center">
-      <i class="far fa-lightbulb" slot="icon"></i>
-      <h1 slot="title">Artikel</h1>
+      <i class="far fa-lightbulb brand-blue-text" slot="icon"></i>
+      <h1 slot="title" class="brand-blue-text">Artikel</h1>
     </PageTitle>
 
     <div class="l-container--b" v-for="post in posts" :key="post.permalink" v-if="!post.draft">

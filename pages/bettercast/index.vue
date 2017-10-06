@@ -1,8 +1,8 @@
 <template>
   <div class="l-container--fixed">
     <PageTitle class="text-center">
-      <i class="far fa-podcast" slot="icon"></i>
-      <h1 slot="title">bettercast</h1>
+      <i class="far fa-podcast brand-pink-text" slot="icon"></i>
+      <h1 slot="title" class="brand-pink-text">bettercast</h1>
     </PageTitle>
 
     <div class="l-container--tb" v-for="post in episodes" :key="post.permalink">
