@@ -51,6 +51,12 @@
           <post-preview :post="article" excerptLength="10"/>
         </div>
       </div>
+
+      <div class="l-container--tb">
+        <nuxt-link class="c-btn c-btn--primary c-btn--icon-r c-btn--default" to="/articles">
+          Mehr Artikel <i class="fa fa-caret-right"></i>
+        </nuxt-link>
+      </div>
     </div>
   </div>
 </template>
@@ -68,10 +74,7 @@ export default {
     PageTitle, IconGroup, IconLink, PostPreview
   },
   async asyncData ({app}) {
-    let [sections] = await Promise.all([
-      app.$content('/sections').getAll()
-      // app.$content('/articles').getOnly(0, 3)
-    ])
+    const sections = await app.$content('/sections').getAll()
 
     sections.sort((a, b) => {
       if (a.meta.fileName < b.meta.fileName) {
@@ -85,11 +88,9 @@ export default {
       return 0
     })
 
-    const articles = []
-
     return {
       sections,
-      articles
+      articles: await app.$content('/articles').getOnly(0, 3)
     }
   }
 }
