@@ -12,5 +12,5 @@ phases:
       - yarn run generate
   post_build:
     commands:
-      - aws s3 sync dist s3://$DEPLOY_S3_BUCKET --acl public-read --delete
+      - aws s3 sync dist s3://$DEPLOY_S3_BUCKET --acl public-read --delete --exclude "_nuxt/*"
       - aws s3 sync dist/_nuxt s3://$DEPLOY_S3_BUCKET/_nuxt --acl public-read --delete --cache-control 'public, max-age=2678400'
