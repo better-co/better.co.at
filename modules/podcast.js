@@ -38,6 +38,7 @@ module.exports = function podcast (moduleOptions) {
 function createPodcastFeed (options, episodes) {
   const feed = new RSS({
     title: 'bettercast — besser gemeinsam erfolgreich arbeiten',
+    description: 'Ein Talk über Erfahrungen mit agilen Methoden.',
     feed_url: 'https://better.co.at/bettercast.xml',
     site_url: 'https://better.co.at/bettercast',
     image_url: 'https://assets.better.co.at/bettercast/cover.png',
@@ -53,14 +54,14 @@ function createPodcastFeed (options, episodes) {
       'itunes': 'http://www.itunes.com/dtds/podcast-1.0.dtd'
     },
     custom_elements: [
-      {'itunes:subtitle': 'Ein Podcast über agile Methoden in der Softwareentwicklung'},
+      {'itunes:subtitle': 'Ein Talk über Erfahrungen mit agilen Methoden.'},
       {'itunes:image': {
         _attr: {
           href: 'https://assets.better.co.at/bettercast/cover.png'
         }
       }},
       {'itunes:author': 'Christoph Hochstrasser'},
-      {'itunes:summary': ''},
+      {'itunes:summary': 'Ein Podcast über besseres Arbeiten durch agile Methoden.'},
       {'itunes:owner': [
         {'itunes:name': 'Christoph Hochstrasser'},
         {'itunes:email': 'me@christophh.net'}
