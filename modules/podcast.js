@@ -72,7 +72,8 @@ function createPodcastFeed (options, episodes) {
             text: 'Management & Marketing'
           }
         }}
-      ]}
+      ]},
+      {'itunes:explicit': 'Clean'}
     ]
   })
 
