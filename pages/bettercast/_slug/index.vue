@@ -27,19 +27,19 @@
           </div>
           <div class="l-grid__col" v-if="person.twitter">
             <a :href="twitterUrl(person.twitter)">
-              <i class="fab fa-twitter"></i>
+              <i class="fab fa-fw fa-twitter"></i>
               {{ person.twitter }}
             </a>
           </div>
           <div class="l-grid__col" v-if="person.facebook">
             <a :href="person.facebook">
-              <i class="fab fa-facebook"></i>
+              <i class="fab fa-fw fa-facebook"></i>
               Facebook
             </a>
           </div>
           <div class="l-grid__col" v-if="person.website">
             <a :href="person.website">
-              <i class="fa fa-external-link-square"></i>
+              <i class="fa fa-fw fa-external-link-square"></i>
               Website
             </a>
           </div>

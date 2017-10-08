@@ -37,14 +37,56 @@ module.exports = function podcast (moduleOptions) {
 
 function createPodcastFeed (options, episodes) {
   const feed = new RSS({
-    title: 'bettercast — Ein Podcast für bessere Software durch agile Entwicklung'
+    title: 'bettercast — besser gemeinsam erfolgreich arbeiten',
+    feed_url: 'https://better.co.at/bettercast.xml',
+    site_url: 'https://better.co.at/bettercast',
+    image_url: 'https://assets.better.co.at/bettercast/cover.png',
+    managingEditor: 'Christoph Hochstrasser',
+    copyright: '2017 Christoph Hochstrasser',
+    link: 'https://better.co.at/bettercast',
+    language: 'de',
+    categories: ['Agile', 'Management', 'Business'],
+    pubDate: episodes[0].date,
+    custom_namespaces: {
+      'itunes': 'http://www.itunes.com/dtds/podcast-1.0.dtd'
+    },
+    custom_elements: [
+      {'itunes:subtitle': 'Ein Podcast über agile Methoden in der Softwareentwicklung'},
+      {'itunes:image': {
+        _attr: {
+          href: 'https://assets.better.co.at/bettercast/cover.png'
+        }
+      }},
+      {'itunes:author': 'Christoph Hochstrasser'},
+      {'itunes:summary': ''},
+      {'itunes:owner': [
+        {'itunes:name': 'Christoph Hochstrasser'},
+        {'itunes:email': 'me@christophh.net'}
+      ]},
+      {'itunes:category': [
+        {_attr: {text: 'Business'}},
+        {'itunes:category': {
+          _attr: {
+            text: 'Management & Marketing'
+          }
+        }}
+      ]}
+    ]
   })
 
   episodes.map((episode) => {
     feed.item({
       title: episode.title,
       date: episode.date,
-      url: episode.permalink
+      url: episode.permalink,
+      enclosure: {
+        url: episode.enclosure.url,
+        size: episode.enclosure.length,
+        type: episode.enclosure.type
+      },
+      custom_elements: [
+        {'itunes:duration': episode.duration}
+      ]
     })
   })
 
