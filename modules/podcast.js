@@ -42,9 +42,11 @@ function createPodcastFeed (options, episodes) {
     site_url: 'https://better.co.at/bettercast',
     image_url: 'https://assets.better.co.at/bettercast/cover.png',
     managingEditor: 'Christoph Hochstrasser',
+    webMaster: 'Christoph Hochstrasser',
     copyright: '2017 Christoph Hochstrasser',
     link: 'https://better.co.at/bettercast',
     language: 'de',
+    ttl: '60',
     categories: ['Agile', 'Management', 'Business'],
     pubDate: episodes[0].date,
     custom_namespaces: {
@@ -77,8 +79,9 @@ function createPodcastFeed (options, episodes) {
   episodes.map((episode) => {
     feed.item({
       title: episode.title,
+      description: episode.body,
       date: episode.date,
-      url: episode.permalink,
+      url: `https://better.co.at${episode.permalink}`,
       enclosure: {
         url: episode.enclosure.url,
         size: episode.enclosure.length,
