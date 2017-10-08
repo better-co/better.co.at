@@ -54,14 +54,13 @@ function createPodcastFeed (options, episodes) {
       'itunes': 'http://www.itunes.com/dtds/podcast-1.0.dtd'
     },
     custom_elements: [
-      {'itunes:subtitle': 'Ein Talk über Erfahrungen mit agilen Methoden.'},
+      {'itunes:subtitle': 'besser gemeinsam erfolgreich arbeiten'},
       {'itunes:image': {
         _attr: {
           href: 'https://assets.better.co.at/bettercast/cover.png'
         }
       }},
       {'itunes:author': 'Christoph Hochstrasser'},
-      {'itunes:summary': 'Ein Podcast über besseres Arbeiten durch agile Methoden.'},
       {'itunes:owner': [
         {'itunes:name': 'Christoph Hochstrasser'},
         {'itunes:email': 'me@christophh.net'}
