@@ -2,6 +2,8 @@
 title: Retrospektiven
 lede: Unausgesprochenes aussprechen, offen Probleme ansprechen, kontinuierlich als
   Team verbessern
+author:
+  name: Christoph Hochstrasser
 ---
 
 ## Dauer

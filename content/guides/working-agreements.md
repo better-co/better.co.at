@@ -2,6 +2,8 @@
 title: Working Agreements
 lede: Working Agreements sind Verhaltensregeln für gemeinsame, produktive Zusammenarbeit
   im Team
+author:
+  name: Christoph Hochstrasser
 ---
 
 ## Dauer

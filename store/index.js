@@ -24,7 +24,7 @@ export const getters = {
 }
 
 export const mutations = {
-  [types.ADD_GUIDE] (state, {guide}) {
+  [types.ADD_GUIDE] (state, { guide }) {
     const hasGuide = state.guides.filter((item) => {
       return typeof item !== 'undefined' && item.permalink === guide.permalink
     }).length > 0
@@ -34,30 +34,34 @@ export const mutations = {
     }
   },
 
-  [types.DELETE_GUIDE] (state, {guide}) {
+  [types.DELETE_GUIDE] (state, { guide }) {
     state.guides = state.guides.filter((item) => {
       return item.permalink !== guide.permalink
     })
   },
 
-  [types.SET_GUIDES] (state, {guides}) {
+  [types.SET_GUIDES] (state, { guides }) {
     state.guides = guides
   }
 }
 
 export const actions = {
-  addGuide ({commit, state}, {guide}) {
-    commit(types.ADD_GUIDE, {guide})
+  async loadFromLocalStorage ({ commit }) {
+    commit(types.SET_GUIDES, { guides: await localforage.getItem('playbook') || [] })
+  },
+
+  async addGuide ({ commit, state }, { guide }) {
+    commit(types.ADD_GUIDE, { guide })
     return localforage.setItem('playbook', state.guides)
   },
 
-  deleteGuide ({commit, state}, {guide}) {
-    commit(types.DELETE_GUIDE, {guide})
+  async deleteGuide ({ commit, state }, { guide }) {
+    commit(types.DELETE_GUIDE, { guide })
     return localforage.setItem('playbook', state.guides)
   },
 
-  reset ({commit, state}) {
-    commit(types.SET_GUIDES, {guides: []})
+  async reset ({ commit, state }) {
+    commit(types.SET_GUIDES, { guides: [] })
     return localforage.setItem('playbook', state.guides)
   }
 }

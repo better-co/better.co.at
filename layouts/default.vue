@@ -37,12 +37,14 @@
                       Podcast
                     </nuxt-link>
                   </div>
-                  <div class="l-grid__col" v-if="playbookCount > 0">
-                    <nuxt-link class="c-nav-link" to="/playbook">
-                      <i class="far fa-book" aria-hidden="true"></i>
-                      Playbook ({{ playbookCount }})
-                    </nuxt-link>
-                  </div>
+                  <transition name="fade-translate">
+                    <div class="l-grid__col" v-if="playbookCount > 0">
+                      <nuxt-link class="c-nav-link" to="/playbook">
+                        <i class="far fa-book" aria-hidden="true"></i>
+                        Playbook ({{ playbookCount }})
+                      </nuxt-link>
+                    </div>
+                  </transition>
                 </div>
               </div>
             </div>
@@ -62,8 +64,6 @@
 <script>
 import Logo from '~/components/Logo'
 import SiteFooter from '~/components/SiteFooter'
-import localforage from 'localforage'
-import * as types from '~/store/mutation-types'
 
 export default {
   components: {
@@ -88,9 +88,7 @@ export default {
 
   async created () {
     if (process.browser) {
-      this.$store.commit(types.SET_GUIDES, {
-        guides: await localforage.getItem('playbook') || []
-      })
+      await this.$store.dispatch('loadFromLocalStorage')
     }
   }
 }
@@ -108,5 +106,13 @@ export default {
   }
   .body {
     background: white;
+  }
+
+  .fade-translate-enter-active, .fade-translate-leave-active {
+    transition: all 200ms ease;
+  }
+  .fade-translate-enter, .fade-translate-leave-to {
+    transform: translateY(20%);
+    opacity: 0;
   }
 </style>

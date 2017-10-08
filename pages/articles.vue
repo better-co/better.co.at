@@ -39,7 +39,7 @@ export default {
     PageTitle
   },
 
-  async asyncData ({app, route}) {
+  async asyncData ({ app, route }) {
     return {
       posts: await app.$content('/articles').getAll()
     }

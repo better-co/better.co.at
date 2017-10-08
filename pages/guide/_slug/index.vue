@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="l-container">
-      <article class="s-article">
+      <article class="s-article l-container--b2">
         <div>
           <button type="button" class="c-btn c-btn--default" @click="addGuide({guide})" v-if="!hasGuide(guide)">
             <i class="fa fa-plus-circle fa-fw"></i> Zum Playbook hinzufügen
@@ -21,6 +21,9 @@
 
         <h2 class="brand-purple-text">Guide</h2>
         <h1>{{ guide.title }}</h1>
+        <h2 class="h2-subheading" v-if="guide.author">Geschrieben von {{ guide.author.name }}</h2>
+
+        <h2 v-if="guide.lede">Zusammenfassung</h2>
         <h2 class="h1-subheading" v-if="guide.lede">{{ guide.lede }}</h2>
 
         <nuxtent-body :body="guide.body" class="s-article" />
@@ -31,15 +34,13 @@
   </div>
 </template>
 <script>
-import {mapActions, mapGetters} from 'vuex'
-import * as types from '~/store/mutation-types'
-import localforage from 'localforage'
+import { mapActions, mapGetters } from 'vuex'
 import EditPost from '~/components/EditPost'
 
 export default {
-  components: {EditPost},
+  components: { EditPost },
 
-  async asyncData ({app, route}) {
+  async asyncData ({ app, route }) {
     const guide = await app.$content('guides').get(route.path)
 
     return {
@@ -49,9 +50,7 @@ export default {
 
   async created () {
     if (process.browser) {
-      this.$store.commit(types.SET_GUIDES, {
-        guides: await localforage.getItem('playbook') || []
-      })
+      await this.$store.dispatch('loadFromLocalStorage')
     }
   },
 

@@ -10,22 +10,19 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "wikiwords": "node ./scripts/wikiwords.js"
   },
   "dependencies": {
     "@nuxtjs/axios": "^4.4.0",
     "excerpt-html": "^1.2.0",
-    "fs-extra": "^4.0.2",
     "jsonp": "^0.2.1",
-    "localforage": "^1.5.0",
+    "localforage": "^1.5.1",
     "moment": "^2.18.1",
-    "node-sass": "^4.5.3",
     "normalize.css": "^7.0.0",
     "nuxt": "^1.0.0-rc3",
     "nuxtent": "^1.0.2",
-    "qs": "^6.5.1",
-    "rss": "^1.2.2",
-    "sass-loader": "^6.0.6"
+    "qs": "^6.5.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.1",
@@ -36,6 +33,11 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.2.0",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1"
+    "eslint-plugin-standard": "^3.0.1",
+    "front-matter": "^2.2.0",
+    "fs-extra": "^4.0.2",
+    "node-sass": "^4.5.3",
+    "rss": "^1.2.2",
+    "sass-loader": "^6.0.6"
   }
 }

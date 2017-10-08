@@ -2,6 +2,8 @@
 title: Mad, Sad, Glad
 lede: 'Offen miteinander klären: Was läuft schlecht, was gefällt uns nicht, was läuft
   gut?'
+author:
+  name: Christoph Hochstrasser
 ---
 
 Eine einfache Aktivität um Daten zu sammeln ist "Mad/Sad/Glad". 

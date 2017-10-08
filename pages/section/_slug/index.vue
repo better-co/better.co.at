@@ -65,7 +65,7 @@ export default {
     PageTitle, IconGroup, IconLink, PostPreview, EditPost
   },
 
-  async asyncData ({app, route}) {
+  async asyncData ({ app, route }) {
     const section = await app.$content('sections').get(route.path)
 
     const guides = section.guides

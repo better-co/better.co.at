@@ -1,10 +1,11 @@
 ---
 title: Story Points sind kein Indikator für Performance
 draft: false
-author: Christoph Hochstrasser
+author:
+  name: Christoph Hochstrasser
 ---
 
-Story Points in Planning Poker oder Fast Estimation sind eine gute Art und Weise den Aufwand von Stories einer Product Owner mitzuteilen, damit sie sieht welche Backlog Items ein gutes Verhältnis zwischen Aufwand und Business Value aufweisen.
+Story Points in Planning Poker oder Fast Estimation sind eine gute Art und Weise den Aufwand von Stories einer [Product Owner](/kb/product-owner) mitzuteilen, damit sie sieht welche Backlog Items ein gutes Verhältnis zwischen Aufwand und Business Value aufweisen.
 
 Nur das Problem mit Story Points ist, dass der Aufwand durch eine Zahl ausgedrückt wird.
 
@@ -32,7 +33,7 @@ Man kann jetzt nicht ungefähre Schätzwerte summieren und dann glauben, dass ma
 
 Es geht bei den Schätzungen nur darum, herauszufinden, was sich von den Items am meisten auszahlt. Niemand darf auf eine Schätzung festgenagelt werden.
 
-Darum sagen dann auch viele Teams mit denen ich zum Tun hatte, dass Scrum scheiße sei, oder dass man nicht mehr schätzen möchte.
+Darum sagen dann auch viele Teams mit denen ich zum Tun hatte, dass [Scrum](/kb/scrum) scheiße sei, oder dass man nicht mehr schätzen möchte.
 
 **Hier können jetzt die T-Shirt Sizes Abhilfe schaffen.** T-Shirt Sizes sind nicht numerisch. Da kommt keiner auf die Idee eine Summe zu bilden. Auch beim Planning wäre es lächerlich, wenn man sagen würde: „Ihr habt mir 1 Story in L, 3 Stories in M, oder 6 Stories in S jedem Sprint zu liefern“ vs. dem gängigen „Ihr habt mir x Story Points zu liefern“ von manchen POs.
 

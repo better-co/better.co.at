@@ -1,5 +1,7 @@
 ---
 title: Retrospective Prime Directive
+author:
+  name: Christoph Hochstrasser
 ---
 
 ## Dauer

@@ -1,9 +1,11 @@
 ---
 title: Wie man gute User Stories schreibt
 lede: User Stories, Acceptance Criteria, Tasks
+author:
+  name: Christoph Hochstrasser
 ---
 
-Ich bin gerade dabei einem Unternehmen Scrum näher zu bringen. In Scrum gibt es das Konzept einer User Story.
+Ich bin gerade dabei einem Unternehmen [Scrum](/kb/scrum) näher zu bringen. In [Scrum](/kb/scrum) gibt es das Konzept einer User Story.
 
 Was ist die Aufgabe einer User Story? In einem Satz festzuhalten, wer die Anwenderin eines Produktes ist, was sie will und warum sie es will. 
 
@@ -25,7 +27,7 @@ Oder genauso schlimm:
 
 > „Als UX Designer möchte ich …”
 
-Ein Produkt entwickelt man nicht für den Product Owner oder den UX Manager. Man entwickelt es für Anwenderinnen.
+Ein Produkt entwickelt man nicht für den [Product Owner](/kb/product-owner) oder den UX Manager. Man entwickelt es für Anwenderinnen.
 
 Eine Story muss festhalten, wie wir die Situation einer Anwenderin, und ihre Aufgabe, die sie erfüllen möchte, zu einem bestimmten Zeitpunkt gesehen haben.
 
@@ -47,7 +49,7 @@ Lang hab ich sie vermieden und gehasst. Jetzt liebe ich sie: Acceptance Criteria
 
 Acceptance Criteria beantworten bei mir eine wesentliche Frage zur Story: Wie kann die Story jemanden demonstriert werden? Woher wissen wir, dass die Story umgesetzt ist?
 
-Ganz wichtig: Es geht hier nicht darum, exakte Spezifikationen ins Scrum hineinzuschmuggeln (Job des Scrum Masters ist es, das zu verhindern).
+Ganz wichtig: Es geht hier nicht darum, exakte Spezifikationen ins [Scrum](/kb/scrum) hineinzuschmuggeln (Job des [Scrum](/kb/scrum) Masters ist es, das zu verhindern).
 
 Mein Trick für das Schreiben von guten AC: Die Situation beschreiben, die zu dem Zeitpunkt besteht, an dem die Story vollständig umgesetzt wurde.
 

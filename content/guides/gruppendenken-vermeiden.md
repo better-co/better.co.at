@@ -1,5 +1,7 @@
 ---
 title: Gruppendenken bei der Ideenfindung vermeiden
+author:
+  name: Christoph Hochstrasser
 ---
 
 Wir kennen das: Man trifft sich als Team zur Ideenfindung. Ein Mitglied hat eine Idee und alle in der Gruppe finden die erste Idee sofort gut. Oder eine Führungsperson hat diese Idee. Darauf folgen dann nur mehr ähnliche Ideen.

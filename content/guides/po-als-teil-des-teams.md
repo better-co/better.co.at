@@ -1,9 +1,11 @@
 ---
 title: Der PO als Teil des Teams
 lede: ''
+author:
+  name: Christoph Hochstrasser
 ---
 
-Es gab mal in Scrum den weit verbreiteten Irrglauben, dass der PO eine Rolle ist, die vom Team zu trennen ist. Man glaubte auch, dass Team und PO nur bei vorgegebenen Events miteinander interagieren dürfen.
+Es gab mal in [Scrum](/kb/scrum) den weit verbreiteten Irrglauben, dass der PO eine Rolle ist, die vom Team zu trennen ist. Man glaubte auch, dass Team und PO nur bei vorgegebenen Events miteinander interagieren dürfen.
 
 In allen Teams, die das praktizierten, gab es dadurch nur Probleme:
 
@@ -12,15 +14,15 @@ In allen Teams, die das praktizierten, gab es dadurch nur Probleme:
 - Eine [Hand Off](/kb/hand-off) Situation zwischen PO und Team, wo Stories zu detailliert beschrieben sind.
 - Man kommt oft erst bei der Sprint Review drauf, dass die Story falsch verstanden wurde und der PO eigentlich etwas ganz anderes gemeint hatte.
 
-Doch das sollte endlich Geschichte sein. Der Scrum Guide in der Ausgabe von 2016, schreibt:
+Doch das sollte endlich Geschichte sein. Der [Scrum](/kb/scrum) Guide in der Ausgabe von 2016, schreibt:
 
-> The Scrum Team consists of a Product Owner, the Development Team, and a Scrum Master.
+> The [Scrum](/kb/scrum) Team consists of a [Product Owner](/kb/product-owner), the Development Team, and a [Scrum](/kb/scrum) Master.
 
 Und weiter heißt es:
 
-> The Product Owner explains what Product Backlog items have been “Done” and what has not been “Done”;
+> The [Product Owner](/kb/product-owner) explains what Product Backlog items have been “Done” and what has not been “Done”;
 
-Also der Product Owner ist ganz klar Teil des Teams.
+Also der [Product Owner](/kb/product-owner) ist ganz klar Teil des Teams.
 
 Das heißt für PO:
 

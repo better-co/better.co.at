@@ -92,7 +92,7 @@ export default {
   components: {
     PageTitle, IconGroup, IconLink, PostPreview
   },
-  async asyncData ({app}) {
+  async asyncData ({ app }) {
     const sections = await app.$content('/sections').getAll()
 
     sections.sort((a, b) => {

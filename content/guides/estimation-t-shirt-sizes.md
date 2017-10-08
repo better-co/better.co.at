@@ -1,5 +1,7 @@
 ---
 title: Schätzung in T-Shirt Größen
+author:
+  name: Christoph Hochstrasser
 ---
 
 ## Dauer

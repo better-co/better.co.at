@@ -43,18 +43,15 @@
 import PostPreview from '~/components/PostPreview'
 import PageTitle from '~/components/PageTitle'
 import { mapState, mapActions } from 'vuex'
-import * as types from '~/store/mutation-types'
-import localforage from 'localforage'
 
 export default {
-  components: {PostPreview, PageTitle},
+  components: {
+    PostPreview, PageTitle
+  },
 
   async created () {
     if (process.browser) {
-      console.log(await localforage.getItem('playbook'))
-      this.$store.commit(types.SET_GUIDES, {
-        guides: await localforage.getItem('playbook') || []
-      })
+      this.$store.dispatch('loadFromLocalStorage')
     }
   },
 
