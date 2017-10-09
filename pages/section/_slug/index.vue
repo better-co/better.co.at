@@ -18,10 +18,6 @@
             {{ section.lede }}
           </p>
         </div>
-        <!-- <PageTitle class="text-center">
-          <h1 slot="title" :class="section.view.colors.text">{{ section.title }}</h1>
-          <span slot="subheading" :class="section.view.colors.text">{{ section.lede }}</span>
-        </PageTitle> -->
       </div>
     </div>
 

@@ -73,8 +73,12 @@ function createPodcastFeed (options, episodes) {
           }
         }}
       ]},
-      {'itunes:explicit': 'Clean'}
+      {'itunes:explicit': 'Yes'}
     ]
+  })
+
+  episodes = episodes.filter((episode) => {
+    return !episode.draft
   })
 
   episodes.map((episode) => {

@@ -1,22 +1,13 @@
-# board
+# better.co.at
 
-> Nuxt.js project
+## Website, Guides & Knowledgebase für besseres gemeinsames Arbeiten
 
-## Build Setup
+## Lizenz
 
-``` bash
-# install dependencies
-$ npm install # Or yarn install
+### Code & Inhalte
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+[Creative Commons Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International Lizenz](http://creativecommons.org/licenses/by-sa/4.0/)
 
-# build for production and launch server
-$ npm run build
-$ npm start
+### FontAwesome 5 Pro
 
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+Lizenziert unter der Font Awesome 5 Pro Commercial License

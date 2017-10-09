@@ -4,7 +4,8 @@ module.exports = {
   */
   modules: [
     'nuxtent',
-    '~/modules/podcast'
+    '~/modules/podcast',
+    '~/modules/algolia'
   ],
   plugins: [
     '~/plugins/focus'

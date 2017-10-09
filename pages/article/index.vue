@@ -1,10 +1,10 @@
 <template>
   <div class="l-container--fixed s-default">
-    <PageTitle class="text-center">
+    <page-title class="text-center">
       <i class="far fa-lightbulb" slot="icon"></i>
       <h1 slot="title">Artikel</h1>
       <span slot="subheading">Artikel</span>
-    </PageTitle>
+    </page-title>
     <ul v-for="post in posts" :key="post.permalink" v-if="!post.draft">
       <li>
         <nuxt-link :to="post.permalink">
