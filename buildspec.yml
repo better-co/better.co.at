@@ -9,6 +9,7 @@ phases:
       - yarn
   build:
     commands:
+      - echo '' > .env
       - yarn run generate
   post_build:
     commands:
