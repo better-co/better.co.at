@@ -30,6 +30,7 @@ module.exports = {
       */
       // Typekit fonts
       { rel: 'stylesheet', type: 'text/css', href: 'https://use.typekit.net/ket7iit.css'},
+      // Fontawesome icons
       { rel: 'stylesheet', type: 'text/css', href: 'https://assets.better.co.at/fonts/fontawesome/css/fontawesome-pro-core.css'},
       { rel: 'stylesheet', type: 'text/css', href: 'https://assets.better.co.at/fonts/fontawesome/css/fontawesome-pro-light.css'},
       { rel: 'stylesheet', type: 'text/css', href: 'https://assets.better.co.at/fonts/fontawesome/css/fontawesome-pro-regular.css'},
