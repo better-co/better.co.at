@@ -20,7 +20,7 @@ export default {
 
   async asyncData ({app}) {
     let episodes = (await app.$content('bettercast').getAll()).filter((episode) => {
-      return !episode.draft
+      return process.env.NODE_ENV === 'development' || !episode.draft
     })
 
     return {

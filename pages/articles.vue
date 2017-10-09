@@ -35,13 +35,16 @@ import PageTitle from '~/components/PageTitle'
 
 export default {
   components: {
-    PostPreview,
-    PageTitle
+    PostPreview, PageTitle
   },
 
   async asyncData ({ app, route }) {
+    const posts = (await app.$content('articles').getAll()).filter(post => {
+      return process.env.NODE_ENV === 'development' || !post.draft
+    })
+
     return {
-      posts: await app.$content('/articles').getAll()
+      posts
     }
   }
 }

@@ -78,7 +78,7 @@ module.exports = {
     ],
 
     vendor: [
-      'jsonp', 'qs', 'moment', 'excerpt-html', 'localforage', 'vue-instantsearch'
+      'jsonp', 'qs', 'moment', 'excerpt-html', 'localforage'
     ],
 
     /*
