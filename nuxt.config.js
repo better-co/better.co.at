@@ -29,7 +29,12 @@ module.exports = {
       ** External CSS
       */
       // Typekit fonts
-      { rel: 'stylesheet', type: 'text/css', href: 'https://use.typekit.net/ket7iit.css'}
+      { rel: 'stylesheet', type: 'text/css', href: 'https://use.typekit.net/ket7iit.css'},
+      { rel: 'stylesheet', type: 'text/css', href: 'https://assets.better.co.at/fonts/fontawesome/css/fontawesome-pro-core.css'},
+      { rel: 'stylesheet', type: 'text/css', href: 'https://assets.better.co.at/fonts/fontawesome/css/fontawesome-pro-light.css'},
+      { rel: 'stylesheet', type: 'text/css', href: 'https://assets.better.co.at/fonts/fontawesome/css/fontawesome-pro-regular.css'},
+      { rel: 'stylesheet', type: 'text/css', href: 'https://assets.better.co.at/fonts/fontawesome/css/fontawesome-pro-solid.css'},
+      { rel: 'stylesheet', type: 'text/css', href: 'https://assets.better.co.at/fonts/fontawesome/css/fontawesome-pro-brands.css'}
     ],
     script: [
     ],
@@ -46,11 +51,6 @@ module.exports = {
   */
   css: [
     'normalize.css',
-    '~/assets/fontawesome/css/fontawesome-pro-core.css',
-    '~/assets/fontawesome/css/fontawesome-pro-light.css',
-    '~/assets/fontawesome/css/fontawesome-pro-regular.css',
-    '~/assets/fontawesome/css/fontawesome-pro-solid.css',
-    '~/assets/fontawesome/css/fontawesome-pro-brands.css',
     '~/assets/scss/main.scss'
   ],
   /*
