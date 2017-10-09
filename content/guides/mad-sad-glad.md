@@ -4,6 +4,11 @@ lede: 'Offen miteinander klären: Was läuft schlecht, was gefällt uns nicht, w
   gut?'
 author:
   name: Christoph Hochstrasser
+tags:
+- activity
+length:
+  from: 20
+  to: 25
 ---
 
 Eine einfache Aktivität um Daten zu sammeln ist "Mad/Sad/Glad". 

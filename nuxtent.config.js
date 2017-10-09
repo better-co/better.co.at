@@ -26,7 +26,8 @@ module.exports = {
       page: '/guide/_slug',
       permalink: '/guide/:slug',
       isPost: false,
-      generate: ['get', 'getAll']
+      generate: ['get', 'getAll'],
+      anchorLevel: 2
     }]
   ]
 }

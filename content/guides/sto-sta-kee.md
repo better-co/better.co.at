@@ -3,6 +3,11 @@ title: StoStaKee
 lede: Stop Doing, Start Doing, Keep Doing
 author:
   name: Christoph Hochstrasser
+tags:
+- activity
+length:
+  from: 10
+  to: 20
 ---
 
 ## Dauer

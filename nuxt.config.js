@@ -1,15 +1,27 @@
+require('dotenv').config()
+
 module.exports = {
   /*
   ** Modules
   */
   modules: [
+    '@nuxtjs/dotenv',
     'nuxtent',
     '~/modules/podcast',
     '~/modules/algolia'
   ],
   plugins: [
-    '~/plugins/focus'
+    '~/plugins/focus',
+    '~/plugins/algolia'
   ],
+
+  /*
+  ** Env variables
+  */
+  env: {
+    algoliaSearchKey: process.env.ALGOLIA_SEARCH_KEY
+  },
+
   /*
   ** Headers of the page
   */
@@ -18,7 +30,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'besser gemeinsam erfolgreich arbeiten' }
     ],
     link: [
       /*
@@ -66,7 +78,7 @@ module.exports = {
     ],
 
     vendor: [
-      'jsonp', 'qs', 'moment', 'excerpt-html', 'localforage'
+      'jsonp', 'qs', 'moment', 'excerpt-html', 'localforage', 'vue-instantsearch'
     ],
 
     /*

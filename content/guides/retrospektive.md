@@ -4,6 +4,11 @@ lede: Unausgesprochenes aussprechen, offen Probleme ansprechen, kontinuierlich a
   Team verbessern
 author:
   name: Christoph Hochstrasser
+tags:
+- activity
+length:
+  from: 60
+  to: 120
 ---
 
 ## Dauer
