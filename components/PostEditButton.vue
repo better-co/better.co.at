@@ -11,7 +11,7 @@ export default {
   props: ['post'],
   data () {
     return {
-      repo: 'github.com/CHH/better.co.at'
+      repo: 'github.com/better-co/better.co.at'
     }
   },
   computed: {

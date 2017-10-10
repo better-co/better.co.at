@@ -8,7 +8,7 @@
             <p>Schick uns deinen Artikel über Github.</p>
           </div>
           <div class="l-grid__col l-grid__col--middle">
-            <a class="c-btn c-btn--default c-btn--md c-btn--icon-r" href="https://github.com/CHH/better.co.at/new/master/content/articles">
+            <a class="c-btn c-btn--default c-btn--md c-btn--icon-r" href="https://github.com/better-co/better.co.at/new/master/content/articles">
               <i class="fab fa-github" aria-hidden="true"></i>
               Neuer Artikel
               <i class="fa fa-angle-right"></i>

@@ -15,7 +15,7 @@ class NuxtentIndexer {
   /**
    * Constructor
    *
-   * @param {algolia.AlgoliaClient} client
+   * @param {algoliasearch.AlgoliaClient} client
    * @param {object} nuxtentConfig
    */
   constructor (client, nuxtentConfig) {

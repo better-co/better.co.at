@@ -5,11 +5,11 @@ author:
   name: Christoph Hochstrasser
 ---
 
-Oft sehe ich [Scrum](/kb/scrum) Teams, das in einem Sprint fünf Stories im Sprint Backlog liegen und dann am Anfang alle Stories begonnen werden. Jeder Entwickler macht eine Story.
+Oft sehe ich [Scrum](/kb/scrum) Teams, die in einem Sprint fünf Stories im Sprint Backlog liegen und dann am Anfang alle Stories begonnen werden. Jeder Entwickler macht eine Story.
 
 Der Burndown sieht dann so aus:
 
-/Integration Hell.jpeg
+<img src='https://assets.better.co.at/images/Integration%20Hell.jpeg' alt='' />
 
 Also am Anfang wird alles begonnen, dann passiert lange nichts und am Ende des Sprints werden alle Stories fertig und werden integriert.
 
@@ -43,7 +43,7 @@ Beim Swarming können Stories in einer sinnvolleren Größe verbleiben, weil all
 
 Da jede Story einzeln abgearbeitet wird, sieht der Burndown in etwa so aus:
 
-/Untitled.jpeg
+<img src="https://assets.better.co.at/images/Burndown.jpeg" alt="Burndown">
 
 Dadurch passiert Integration immer wieder während des Sprints. Und nicht mit allen Stories am Ende des Sprints.
 

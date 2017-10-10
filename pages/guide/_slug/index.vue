@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <div class="l-container">
-      <article class="s-article l-container--b2">
+  <div class="l-container--tb">
+    <article class="l-container--b2">
+      <header class="s-article l-container--b2">
         <div>
           <button type="button" class="c-btn c-btn--default" @click="addGuide({guide})" v-if="!hasGuide(guide)">
             <i class="fa fa-plus-circle fa-fw"></i> Zum Playbook hinzufügen
@@ -25,11 +25,10 @@
 
         <h2 v-if="guide.lede">Zusammenfassung</h2>
         <h2 class="h1-subheading" v-if="guide.lede">{{ guide.lede }}</h2>
+      </header>
 
-        <nuxtent-body :body="guide.body" class="s-article" />
-      </article>
-    </div>
-
+      <nuxtent-body :body="guide.body" class="s-article" />
+    </article>
     <edit-post :post="guide"/>
   </div>
 </template>

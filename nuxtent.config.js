@@ -29,5 +29,9 @@ module.exports = {
       generate: ['get', 'getAll'],
       anchorLevel: 2
     }]
-  ]
+  ],
+  parsers: {
+    md: {
+    }
+  }
 }
