@@ -19,6 +19,7 @@ module.exports = {
   ** Env variables
   */
   env: {
+    algoliaAppId: process.env.ALGOLIA_APP_ID,
     algoliaSearchKey: process.env.ALGOLIA_SEARCH_KEY
   },
 
@@ -98,5 +99,10 @@ module.exports = {
 
   podcast: {
     path: 'bettercast.xml'
+  },
+
+  algolia: {
+    appId: process.env.ALGOLIA_APP_ID,
+    appKey: process.env.ALGOLIA_ADMIN_KEY
   }
 }

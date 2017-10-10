@@ -7,7 +7,7 @@ const defaults = {
   path: '/podcast.xml'
 }
 
-module.exports = function podcast (moduleOptions) {
+module.exports = function podcastModule (moduleOptions) {
   const options = Object.assign({}, defaults, this.options.podcast, moduleOptions)
   const feedPath = path.resolve(this.options.srcDir, path.join('dist', options.path))
 
