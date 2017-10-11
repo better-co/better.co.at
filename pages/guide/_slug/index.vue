@@ -1,23 +1,8 @@
 <template>
-  <div class="l-container--tb">
+  <div>
     <article class="l-container--b2">
-      <header class="s-article l-container--b2">
-        <div>
-          <button type="button" class="c-btn c-btn--default" @click="addGuide({guide})" v-if="!hasGuide(guide)">
-            <i class="fa fa-plus-circle fa-fw"></i> Zum Playbook hinzufügen
-          </button>
-          <div class="l-grid l-grid--gutters" v-if="hasGuide(guide)">
-            <div class="l-grid__col">
-              <nuxt-link to="/playbook"><i class="fa fa-check fa-fw"></i> In deinem Playbook</nuxt-link>
-            </div>
-            <div class="l-grid__col">
-              <a href="#" @click="deleteGuide({guide})">
-                <i class="fa fa-minus fa-fw"></i>
-                Entfernen
-              </a>
-            </div>
-          </div>
-        </div>
+      <header class="s-article l-container--tb">
+        <playbook-controls :guide="guide"/>
 
         <h2 class="brand-purple-text">Guide</h2>
         <h1>{{ guide.title }}</h1>
@@ -29,15 +14,18 @@
 
       <nuxtent-body :body="guide.body" class="s-article" />
     </article>
+    <div class="s-article l-container--tb">
+      <playbook-controls :guide="guide"/>
+    </div>
     <edit-post :post="guide"/>
   </div>
 </template>
 <script>
-import { mapActions, mapGetters } from 'vuex'
 import EditPost from '~/components/EditPost'
+import PlaybookControls from '~/components/PlaybookControls'
 
 export default {
-  components: { EditPost },
+  components: { EditPost, PlaybookControls },
 
   async asyncData ({ app, route }) {
     const guide = await app.$content('guides').get(route.path)
@@ -45,20 +33,6 @@ export default {
     return {
       guide
     }
-  },
-
-  async created () {
-    if (process.browser) {
-      await this.$store.dispatch('loadFromLocalStorage')
-    }
-  },
-
-  methods: {
-    ...mapActions(['addGuide', 'deleteGuide'])
-  },
-
-  computed: {
-    ...mapGetters(['hasGuide'])
   }
 }
 </script>

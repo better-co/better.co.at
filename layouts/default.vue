@@ -37,14 +37,12 @@
                       Podcast
                     </nuxt-link>
                   </div>
-                  <transition name="fade-translate">
-                    <div class="l-grid__col" v-if="playbookCount > 0">
-                      <nuxt-link class="c-nav-link" to="/playbook">
-                        <i class="far fa-book" aria-hidden="true"></i>
-                        Playbook ({{ playbookCount }})
-                      </nuxt-link>
-                    </div>
-                  </transition>
+                  <div class="l-grid__col">
+                    <nuxt-link class="c-nav-link" to="/playbook">
+                      <i class="far fa-book" aria-hidden="true"></i>
+                      Playbook <transition name="fade-translate"><span v-if="playbookCount > 0">({{ playbookCount }})</span></transition>
+                    </nuxt-link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -97,9 +95,16 @@ export default {
 <style lang="scss">
   .logo {
     padding: 0.5rem 0;
+    max-width: 3rem;
+    overflow: hidden;
   }
   .logo img {
     height: 3rem;
+  }
+  @media screen and (min-width: 23em) {
+    .logo {
+      max-width: none;
+    }
   }
   .main-navigation {
     box-shadow: inset 0px -1px 0px rgba(black, 0.1);

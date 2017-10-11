@@ -9,13 +9,24 @@
   }
 
   > :not(img):not(figure) {
-    max-width: 40rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  @media screen and (min-width: 42rem) {
+    > :not(img):not(figure) {
+      max-width: 40rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   img, figure {
     max-width: 100%;
+  }
+
+  > ul {
+    padding-left: 3rem;
   }
 
   p, li {
