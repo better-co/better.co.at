@@ -12,3 +12,7 @@ dist
 
 *.un~
 /.env
+
+# PWA module files
+sw.*
+workbox-*

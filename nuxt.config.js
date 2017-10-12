@@ -7,6 +7,7 @@ module.exports = {
   modules: [
     '@nuxtjs/dotenv',
     '@nuxtjs/google-analytics',
+    '@nuxtjs/pwa',
     'nuxtent',
     '~/modules/podcast',
     '~/modules/algolia'
@@ -110,5 +111,10 @@ module.exports = {
 
   'google-analytics': {
     id: 'UA-108016054-1'
+  },
+
+  manifest: {
+    name: 'better.co.at',
+    lang: 'de'
   }
 }

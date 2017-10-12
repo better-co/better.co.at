@@ -17,6 +17,7 @@
     "@nuxtjs/axios": "^4.4.0",
     "@nuxtjs/dotenv": "^1.0.0",
     "@nuxtjs/google-analytics": "^1.0.0",
+    "@nuxtjs/pwa": "^1.0.2",
     "algoliasearch": "^3.24.5",
     "excerpt-html": "^1.2.0",
     "jsonp": "^0.2.1",
