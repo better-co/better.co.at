@@ -6,10 +6,12 @@ module.exports = {
   */
   modules: [
     '@nuxtjs/dotenv',
+    '@nuxtjs/google-analytics',
     'nuxtent',
     '~/modules/podcast',
     '~/modules/algolia'
   ],
+
   plugins: [
     '~/plugins/focus',
     '~/plugins/algolia'
@@ -104,5 +106,9 @@ module.exports = {
   algolia: {
     appId: process.env.ALGOLIA_APP_ID,
     appKey: process.env.ALGOLIA_ADMIN_KEY
+  },
+
+  'google-analytics': {
+    id: 'UA-108016054-1'
   }
 }
