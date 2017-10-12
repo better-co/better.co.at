@@ -1,3 +1,5 @@
+const footnotesPlugin = require('markdown-it-footnote')
+
 module.exports = {
   content: [
     ['articles', {
@@ -32,6 +34,9 @@ module.exports = {
   ],
   parsers: {
     md: {
+      use: [
+        footnotesPlugin
+      ]
     }
   }
 }

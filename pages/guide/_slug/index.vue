@@ -1,9 +1,9 @@
 <template>
   <div>
+    <playbook-controls :guide="guide"/>
+
     <article class="l-container--b2">
       <header class="s-article l-container--tb">
-        <playbook-controls :guide="guide"/>
-
         <h2 class="brand-purple-text">Guide</h2>
         <h1>{{ guide.title }}</h1>
         <h2 class="h2-subheading" v-if="guide.author">Geschrieben von {{ guide.author.name }}</h2>
@@ -14,9 +14,8 @@
 
       <nuxtent-body :body="guide.body" class="s-article" />
     </article>
-    <div class="s-article l-container--tb">
-      <playbook-controls :guide="guide"/>
-    </div>
+
+    <playbook-controls :guide="guide"/>
     <edit-post :post="guide"/>
   </div>
 </template>

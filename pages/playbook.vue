@@ -6,7 +6,7 @@
       </PageTitle>
     </div>
 
-    <div v-if="guides.length === 0" class="s-article l-container--tb light-orange-bg">
+    <div v-if="guides.length === 0" class="s-article l-container--tb">
       <h2>Dein persönliches Playbook für dein Team</h2>
       <p>
         Dir gefällt einer unserer Guides und du möchtest ihn speichern?

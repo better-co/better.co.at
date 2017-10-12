@@ -13,5 +13,7 @@ lede: Die Umsetzung neuer Features dauert zu lange? Schlechte Codequalität kann
   der Auslöser sein.
 guides:
 - swarming
+- aus-sprint-planning-druck-rausnehmen
+kb:
+- cross-functional-team
 ---
-

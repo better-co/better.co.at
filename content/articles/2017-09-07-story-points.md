@@ -11,11 +11,13 @@ Nur das Problem mit Story Points ist, dass der Aufwand durch eine Zahl ausgedrü
 
 Und viele Menschen glauben, dass man auf alles Statistik anwenden kann, wenn es wie eine Folge von Zahlen aussieht. Oder, dass es möglich ist, Story Points von mehreren Backlog Items aufzusummieren um von jemanden ein Commitment zum Abliefern genau dieser Summe zu fordern.
 
-**Irrsinn.**
+Ich finde das Irrsinn.
 
-Kurzer Hintergrund zum Grundgedanken von [Scrum](/kb/scrum): Es geht darum das, was dem Nutzer/Kunden am meisten bringt, als Erstes zu liefern.
+## Was am meisten bringt, soll zuerst gemacht werden.
 
-Estimations sind nur ein Mittel um der [PO](/kb/product-owner) beim Herauszufinden welche Items das genau sein sollen zu unterstützen und bei der Reihung des Backlogs zu helfen.
+Kurzer Hintergrund zum Grundgedanken von [Scrum](/kb/scrum): Was am meisten bringt, soll zuerst gemacht werden.
+
+Estimations sind nur ein Mittel für [Product Owners](/kb/product-owner) um herauszufinden, wie das erreicht werden kann.
 
 Also um Folgendes auszudrücken:
 
@@ -23,21 +25,29 @@ Also um Folgendes auszudrücken:
 - „Das ist unmöglich umzusetzen!“
 - „Das ist ganz einfach!“
 
-Und selbst da geht es nur um einen ungefähren Schätzwert. „Besser ungefähr richtig als präzise falsch“ ist hier das Motto. Darum auch meistens die Verwendung einer Fibonacci Reihe. Weil es eine Unschärfe geben soll. Weil Menschen schlecht schätzen können. Also 5 Story Points sagen in Wirklichkeit nur aus, dass der Aufwand zwischen 3 und 8 Story Points liegt.
+Und selbst dort geht es nur um einen groben Schätzwert. „Besser ungefähr richtig als präzise falsch“ ist hier das Motto. Darum üblicherweise auch die Verwendung einer Fibonacci Reihe. Weil es eine bewusste Unschärfe geben soll. Weil wir Menschen grundsätzlich schlecht im schätzen sind[^estimations]. Also fünf Story Points sagen in Wirklichkeit aus, dass der Aufwand zwischen drei und acht Story Points liegt.
 
-Das Ziel Business Value zu liefern heißt auch, dass es nicht darum geht so viele Story Points pro Sprint wie möglich umzusetzen, oder dass die Velocity so hoch wie möglich ist, oder dass wir präzise Schätzungen abliefern. Liefern tun wir nur eines: Business Value.
+[^estimations]: <http://evolution.berkeley.edu/evolibrary/news/110201_throwing>
 
-**Schätzungen sind nie dazu da ein Performance Indikator zu sein!**
+Das Ziel möglichst viel Business Value zu liefern heißt auch, dass es nicht darum geht so viele Story Points pro Sprint wie möglich umzusetzen. Oder dass die Velocity so hoch wie möglich ist. Oder dass wir präzise Schätzungen abliefern.
 
-Man kann jetzt nicht ungefähre Schätzwerte summieren und dann glauben, dass man das genau nehmen kann. Es wird dann in der Praxis einem Team dann vorgeworfen, warum die Velocity niedriger ist, oder warum man sich so verschätzt hat.
+Liefern tun wir nur eines: Business Value.
+
+Schätzungen sind nie dazu da ein Performance Indikator zu sein.
+
+Man kann nicht ungefähre Schätzwerte summieren und dann glauben, dass man das genau nehmen kann. Einem Team wird dann in der Praxis vorgeworfen, warum die Velocity niedriger war, oder warum man sich so verschätzt hat.
 
 Es geht bei den Schätzungen nur darum, herauszufinden, was sich von den Items am meisten auszahlt. Niemand darf auf eine Schätzung festgenagelt werden.
 
-Darum sagen dann auch viele Teams mit denen ich zum Tun hatte, dass [Scrum](/kb/scrum) scheiße sei, oder dass man nicht mehr schätzen möchte.
+Darum sagen dann viele Teams, dass [Scrum](/kb/scrum) ihre Situation nicht verbessert hat oder, dass man nichts mehr schätzen möchte.
 
-**Hier können jetzt die T-Shirt Sizes Abhilfe schaffen.** T-Shirt Sizes sind nicht numerisch. Da kommt keiner auf die Idee eine Summe zu bilden. Auch beim Planning wäre es lächerlich, wenn man sagen würde: „Ihr habt mir 1 Story in L, 3 Stories in M, oder 6 Stories in S jedem Sprint zu liefern“ vs. dem gängigen „Ihr habt mir x Story Points zu liefern“ von manchen POs.
+## Quick fix: T-Shirt Sizes zur Estimation
+
+Eine vorübergehende Lösung kann jetzt die Verwendung von T-Shirt Sizes zur Estimation sein. T-Shirt Sizes sind nicht numerisch. Da kommt keiner auf die Idee eine Summe zu bilden. Auch beim Planning wäre es lächerlich, wenn man sagen würde: „Ihr habt mir 1 Story in L, 3 Stories in M, oder 6 Stories in S jedem Sprint zu liefern“ vs. dem gängigen „Ihr habt mir x Story Points zu liefern“ von manchen POs.
 
 Man erfüllt also das Ziel der PO mitzuteilen, welches Backlog Item ungefähr wieviel Aufwand bedeutet. Ohne aber eine Genauigkeit oder Messbarkeit anzudeuten, die es gar nicht geben kann.
+
+Langfristig können aber auch T-Shirt Sizes nicht messbare Indikatoren für Team-Performance ersetzen.
 
 ## Team Performance Indikatoren
 
