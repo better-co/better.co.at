@@ -12,12 +12,13 @@ module.exports = {
     '~/modules/podcast',
     '~/modules/algolia'
   ],
-
+  /*
+  ** Plugins
+  */
   plugins: [
     '~/plugins/focus',
     '~/plugins/algolia'
   ],
-
   /*
   ** Env variables
   */
@@ -25,7 +26,6 @@ module.exports = {
     algoliaAppId: process.env.ALGOLIA_APP_ID,
     algoliaSearchKey: process.env.ALGOLIA_SEARCH_KEY
   },
-
   /*
   ** Headers of the page
   */
@@ -75,16 +75,13 @@ module.exports = {
   */
   build: {
     extractCSS: true,
-
     watch: [
       '~/content',
       '~/lib/data'
     ],
-
     vendor: [
       'jsonp', 'qs', 'moment', 'excerpt-html', 'localforage'
     ],
-
     /*
     ** Run ESLINT on save
     */
@@ -99,20 +96,28 @@ module.exports = {
       }
     }
   },
-
+  /*
+  ** Generates podcast RSS feed from nuxtent posts
+  */
   podcast: {
     path: 'bettercast.xml'
   },
-
+  /*
+  ** Indexes all content into algolia
+  */
   algolia: {
     appId: process.env.ALGOLIA_APP_ID,
     appKey: process.env.ALGOLIA_ADMIN_KEY
   },
-
+  /*
+  ** Google Analytics module
+  */
   'google-analytics': {
     id: 'UA-108016054-1'
   },
-
+  /*
+  ** PWA manifest
+  */
   manifest: {
     name: 'better.co.at',
     lang: 'de'
