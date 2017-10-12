@@ -64,7 +64,7 @@
     <div class="l-container--tb brand-blue-bg">
       <div class="l-container--fixed s-default">
         <h1 class="text-center light-blue-text">
-          <i class="far fa-question-circle fa-fw" aria-hidden="true"></i> Du suchst nach professioneller Unterstützung?
+          Du suchst nach professioneller Unterstützung?
         </h1>
         <p class="h2-subheading text-center light-blue-text">
           Geführte Retrospektiven, Scrum und Agile Consulting & auf dich und dein Unternehmen
