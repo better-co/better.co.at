@@ -113,7 +113,7 @@ module.exports = {
   ** Google Analytics module
   */
   'google-analytics': {
-    id: 'UA-108016054-1'
+    ua: 'UA-108016054-1'
   },
   /*
   ** PWA manifest
