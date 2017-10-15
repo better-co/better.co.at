@@ -17,7 +17,7 @@ length:
 
 ## Einleitung
 
-Bei einer Retrospektive geht grundsätzlich um folgende (relativ einfachen) Fragen:
+Bei einer Retrospektive geht es grundsätzlich um folgende (relativ einfachen) Fragen:
 
 * Was läuft gut und sollten wir beibehalten?
 * Was läuft nicht gut und sollten wir anders machen?
