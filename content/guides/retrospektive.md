@@ -17,7 +17,7 @@ length:
 
 ## Einleitung
 
-Bei einer Retrospektive geht es grundsätzlich um folgende (relativ einfachen) Fragen:
+Bei einer Retrospektive geht es grundsätzlich um die folgenden (relativ einfachen) Fragen:
 
 * Was läuft gut und sollten wir beibehalten?
 * Was läuft nicht gut und sollten wir anders machen?
@@ -28,9 +28,9 @@ Man braucht nicht wirklich viel für eine Retrospektive und du besitzt das Meist
 
 - **Einen Raum.** Wenn möglich sollten Tische zur Seite geschoben werden und die Sessel im Halbkreis um ein Flipchart stehen, damit jeder gleich nahe am Flipchart sitzt um gut beitragen zu können. Wenn es einen "Team-Raum" gibt, dann sollte dieser genutzt werden anstatt eines Konferenzraums, da dort die Ergebnisse der Retrospektive nicht weggeräumt werden müssen.
 - **Einen Retrospective-Leader,** der als Moderator und Vermittler zwischen den Teilnehmern agiert, die Vorbereitung übernimmt und den Ablauf steuert. Idealerweise nicht jemand vom Management, damit Mitarbeiter wirklich offen sprechen können.
-- Team-Mitglieder, die freiwillig anwesend sind (es macht keinen Sinn, wenn Personen dabei sind, die nicht mitarbeiten wollen, weil z.B. erwartet wird Arbeitsaufträge auszuführen.)
-- Oberflächen zum Schreiben, ideal ist mindestens ein Flipchart und je ein Flipchart-Marker für jede teilnehmende Person.
-- Post-its für das Brainstorming. Verschiedene Formen von Brainstorming sind Teil von vielen Aktivitäten, wie z.B. "[Mad/Sad/Glad](/guide/mad-sad-glad)" oder [StoStaKee](/guide/sto-sta-kee). Ideen auf Post-its können auch in Cluster gruppiert werden um Muster zu finden und Erkenntnisse zu gewinnen.
+- **Team-Mitglieder,** die freiwillig anwesend sind (es macht keinen Sinn, wenn Personen dabei sind, die nicht mitarbeiten wollen, weil z.B. erwartet wird Arbeitsaufträge auszuführen.)
+- **Oberflächen zum Schreiben,** ideal ist mindestens ein Flipchart und je ein Flipchart-Marker für jede teilnehmende Person.
+- **Post-its für das Brainstorming.** Verschiedene Formen von Brainstorming sind Teil von vielen Aktivitäten, wie z.B. "[Mad/Sad/Glad](/guide/mad-sad-glad)" oder [StoStaKee](/guide/sto-sta-kee). Ideen auf Post-its können auch in Cluster gruppiert werden um Muster zu finden und daraus Erkenntnisse zu gewinnen.
 
 ## So läuft eine Retrospektive ab 
 
@@ -53,6 +53,10 @@ Nachdem Daten gemeinsam gesammelt wurden, geht es darum aus den Daten Erkenntnis
 ### Decide What To Do
 
 Eine Retrospektive ist nicht nur ein Meeting bei dem viel gesagt wird. Es geht hier auch darum, nach dem wir etwas herausgefunden haben und nach den Erkenntnissen, die wir gewonnen haben Experimente zu planen, die dann durchgeführt werden.
+
+Eine einfache Möglichkeit um die Ergebnisse der Retrospektive festzuhalten ist ein "Wer-Was-Wann". Dafür eine Tabelle mit drei Spalten auf ein Flipchart-Blatt oder ein Whiteboard zeichnen: "Wer", "Was" und "Wann" (Illustration folgt). 
+
+Danach für jede Idee, die man umsetzen möchte jemanden definieren (Wer), der etwas tut (Was) bis zu welchem Zeitpunkt (Wann) und je in eine Zeile der Tabelle schreiben. Das kann auch für jegliche andere Arten von Meetings verwendet werden, wo man festhalten möchte welche Aktionen aus dem Meeting folgen sollen.
 
 ### Debriefing
 
