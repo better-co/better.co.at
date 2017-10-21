@@ -15,6 +15,7 @@
 
 <script>
 import RelativeDate from '~/components/RelativeDate'
+import excerptHtml from 'excerpt-html'
 
 export default {
   components: {
@@ -26,6 +27,17 @@ export default {
 
     return {
       post
+    }
+  },
+
+  head () {
+    const description = this.post.lede || excerptHtml(this.post.body)
+
+    return {
+      title: `${this.post.title} — better.co.at`,
+      meta: [
+        { hid: 'description', name: 'description', content: description }
+      ]
     }
   }
 }

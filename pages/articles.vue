@@ -46,6 +46,15 @@ export default {
     return {
       posts
     }
+  },
+
+  head () {
+    return {
+      title: 'Artikel — better.co.at',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Artikel aus unserem Blog zu Agile, Scrum & mehr' }
+      ]
+    }
   }
 }
 </script>

@@ -31,6 +31,7 @@ module.exports = {
   */
   head: {
     title: 'better.co.at',
+    description: 'besser gemeinsam erfolgreich arbeiten',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -114,6 +115,12 @@ module.exports = {
   */
   'google-analytics': {
     ua: 'UA-108016054-1'
+  },
+  /*
+  ** PWA Module Metadata
+  */
+  meta: {
+    ogDescription: 'besser gemeinsam erfolgreich arbeiten'
   },
   /*
   ** PWA manifest

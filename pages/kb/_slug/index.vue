@@ -13,17 +13,30 @@
 </template>
 
 <script>
+import excerptHtml from 'excerpt-html'
 import EditPost from '~/components/EditPost'
 
 export default {
   components: {
     EditPost
   },
+
   async asyncData ({ app, route }) {
     const page = await app.$content('/kb').get(route.path)
 
     return {
       page
+    }
+  },
+
+  head () {
+    const description = this.page.lede || excerptHtml(this.page.body)
+
+    return {
+      title: `${this.page.title} — better.co.at`,
+      meta: [
+        { hid: 'description', name: 'description', content: description }
+      ]
     }
   }
 }

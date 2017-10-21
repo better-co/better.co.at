@@ -55,7 +55,7 @@
       <nuxt/>
     </main>
 
-    <SiteFooter/>
+    <site-footer/>
   </div>
 </template>
 

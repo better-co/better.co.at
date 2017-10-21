@@ -26,6 +26,15 @@ export default {
     return {
       episodes
     }
+  },
+
+  head () {
+    return {
+      title: 'bettercast — better.co.at',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Ein Podcast für Agile Entwicklung in Österreich' }
+      ]
+    }
   }
 }
 </script>

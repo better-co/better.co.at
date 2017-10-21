@@ -50,6 +50,7 @@
 </template>
 
 <script>
+import excerptHtml from 'excerpt-html'
 import PageTitle from '~/components/PageTitle'
 import IconGroup from '~/components/IconGroup'
 import IconLink from '~/components/IconLink'
@@ -78,6 +79,17 @@ export default {
 
     return {
       section, guides, kb
+    }
+  },
+
+  head () {
+    const description = this.section.lede || excerptHtml(this.section.body)
+
+    return {
+      title: `${this.section.title} — better.co.at`,
+      meta: [
+        { hid: 'description', name: 'description', content: description }
+      ]
     }
   }
 }

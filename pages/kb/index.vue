@@ -1,3 +1,3 @@
 <template>
-  <div><nuxt-child/></div>
+  <div><nuxt-child /></div>
 </template>

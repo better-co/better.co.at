@@ -20,6 +20,7 @@
   </div>
 </template>
 <script>
+import excerptHtml from 'excerpt-html'
 import EditPost from '~/components/EditPost'
 import PlaybookControls from '~/components/PlaybookControls'
 
@@ -31,6 +32,17 @@ export default {
 
     return {
       guide
+    }
+  },
+
+  head () {
+    const description = this.guide.lede || excerptHtml(this.guide.body)
+
+    return {
+      title: `${this.guide.title} — better.co.at`,
+      meta: [
+        { hid: 'description', name: 'description', content: description }
+      ]
     }
   }
 }

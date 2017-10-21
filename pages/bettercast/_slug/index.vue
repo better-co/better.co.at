@@ -50,6 +50,8 @@
 </template>
 
 <script>
+import excerptHtml from 'excerpt-html'
+
 export default {
   async asyncData ({ app, route }) {
     const episode = await app.$content('bettercast').get(route.path)
@@ -58,6 +60,7 @@ export default {
       episode
     }
   },
+
   methods: {
     twitterUrl (username) {
       return `https://twitter.com/${username}`
@@ -65,6 +68,17 @@ export default {
 
     download (episode) {
       return `bettercast-S${episode.season}x${episode.episodeNumber}.mp3`
+    }
+  },
+
+  head () {
+    const description = this.episode.lede || excerptHtml(this.episode.body)
+
+    return {
+      title: `${this.episode.title} — better.co.at`,
+      meta: [
+        { hid: 'description', name: 'description', content: description }
+      ]
     }
   }
 }
