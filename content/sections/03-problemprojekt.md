@@ -15,6 +15,7 @@ guides:
 - mad-sad-glad
 - wie-man-gute-stories-schreibt
 - po-als-teil-des-teams
+- breaking-the-ice
 kb:
 - scrum
 - cross-functional-team

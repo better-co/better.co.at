@@ -4,7 +4,7 @@
     color: map-get($darks, "blue");
   }
 
-  > * + * {
+  > * + *, > blockquote * + * {
     margin: calc(1rem + 1vh) 0 0;
   }
 

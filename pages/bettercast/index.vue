@@ -18,7 +18,7 @@ export default {
     PostPreview, PageTitle
   },
 
-  async asyncData ({app}) {
+  async asyncData ({ app }) {
     let episodes = (await app.$content('bettercast').getAll()).filter((episode) => {
       return process.env.NODE_ENV === 'development' || !episode.draft
     })
