@@ -17,9 +17,9 @@ length:
 
 ## Vorbereitung
 
-- [ ] ca. 10 Karteikarten für die Working Agreements
-- [ ] Whiteboard o.ä. wo man die Working Agreements aufhängen kann
-- [ ] alternativ: Working Agreements mit Post-its brainstormen, dann auf einem Flipchart-Blatt festhalten, das dann vom Team an der Wand aufgehängt werden kann
+- ca. 10 Karteikarten für die Working Agreements
+- Whiteboard o.ä. wo man die Working Agreements aufhängen kann
+- alternativ: Working Agreements mit Post-its brainstormen, dann auf einem Flipchart-Blatt festhalten, das dann vom Team an der Wand aufgehängt werden kann
 
 ## Einleitung
 
