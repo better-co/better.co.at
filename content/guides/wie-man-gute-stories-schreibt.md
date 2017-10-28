@@ -11,11 +11,13 @@ Was ist die Aufgabe einer User Story? In einem Satz festzuhalten, wer die Anwend
 
 Eigentlich eine recht praktische Art und Weise einzufangen, warum man ein Feature überhaupt braucht und um sicherzustellen, dass man nichts in ein Produkt einbaut, was in Wirklichkeit nie irgendjemand braucht.
 
-Meistens hat man ein bestimmtes Format dafür: “Als _____ möchte ich _____, damit ich _____.”
+Meistens hat man ein bestimmtes Format dafür:
+
+> „Als _____ möchte ich _____, damit ich _____.”
 
 Hier ein kleines Beispiel:
 
-„Als ein Familienvater möchte ich Veranstaltungstipps in meiner Nähe sehen können, damit ich herausfinden kann welche Aktivitäten ich in meiner Nähe mit meiner Familie machen kann.”
+> „Als ein Familienvater möchte ich Veranstaltungstipps in meiner Nähe sehen können, damit ich herausfinden kann welche Aktivitäten ich in meiner Nähe mit meiner Familie machen kann.”
 
 Ich bin also beim Kickoff dieses Projektes und es gibt bereits ein Backlog.
 
