@@ -29,7 +29,7 @@ Man braucht nicht wirklich viel für eine Retrospektive und du besitzt das Meist
 - **Einen Raum.** Wenn möglich sollten Tische zur Seite geschoben werden und die Sessel im Halbkreis um ein Flipchart stehen, damit jeder gleich nahe am Flipchart sitzt um gut beitragen zu können. Wenn es einen "Team-Raum" gibt, dann sollte dieser genutzt werden anstatt eines Konferenzraums, da dort die Ergebnisse der Retrospektive nicht weggeräumt werden müssen.
 - **Einen Retrospective-Leader,** der als Moderator und Vermittler zwischen den Teilnehmern agiert, die Vorbereitung übernimmt und den Ablauf steuert. Idealerweise nicht jemand vom Management, damit Mitarbeiter wirklich offen sprechen können.
 - **Team-Mitglieder,** die freiwillig anwesend sind (es macht keinen Sinn, wenn Personen dabei sind, die nicht mitarbeiten wollen, weil z.B. erwartet wird Arbeitsaufträge auszuführen.)
-- **Oberflächen zum Schreiben,** ideal ist mindestens ein Flipchart und je ein Flipchart-Marker für jede teilnehmende Person.
+- **Oberflächen zum Schreiben,** ideal ist mindestens ein Flipchart und für jede teilnehmende Person je ein Flipchart-Marker.
 - **Post-its für das Brainstorming.** Verschiedene Formen von Brainstorming sind Teil von vielen Aktivitäten, wie z.B. "[Mad/Sad/Glad](/guide/mad-sad-glad)" oder [StoStaKee](/guide/sto-sta-kee). Ideen auf Post-its können auch in Cluster gruppiert werden um Muster zu finden und daraus Erkenntnisse zu gewinnen.
 
 ## So läuft eine Retrospektive ab 
