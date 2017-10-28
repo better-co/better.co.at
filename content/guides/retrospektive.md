@@ -13,7 +13,7 @@ length:
 
 ## Dauer
 
-1–2 Stunden pro Woche
+1–2 Stunden
 
 ## Einleitung
 
@@ -66,9 +66,9 @@ Beim Debriefing geht es darum, herauszufinden was man an der Retrospektive an si
 
 - Pünktlich beginnen, Zeitplan rigoros einhalten. Vorbereitung hilft hier.
 - 1 Stunde Vorbereitung als Leiter der Retrospektive einplanen um Aktivitäten zu planen.
-- Working Agreements am Anfang der ersten Retrospektive unbedingt festlegen. Hinweis, dass Working Agreements aufgehoben werden sollen.
+- Working Agreements am Anfang der ersten Retrospektive unbedingt festlegen. Hinweis, dass Working Agreements aufbewahrt werden sollen.
 - Ungefähr jede Stunde 10–15 Minuten Pause.
-- Start mit Review dem Review der Tasks, die bei der letzten Retro erarbeitet wurden.
+- Start mit dem Review der Tasks, die bei der letzten Retrospektive erarbeitet wurden.
 - Um TeilnehmerInnen in "Redelaune" zu bekommen hilft mit einer kurze Runde zu beginnen, wo jede
   TeilnehmerIn eine kurze Wortmeldung zum letzten Sprint bringt.
 - Eine weitere Möglichkeit zur Auflockerung ist das "Sprint Wetter": Jede TeilnehmerIn beschreibt
