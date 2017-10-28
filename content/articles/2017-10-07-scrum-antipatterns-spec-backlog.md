@@ -23,7 +23,7 @@ Dadurch hat der PO (der noch dazu nur ein [Proxy PO](/kb/proxy-product-owner)) w
 
 Also der PO wurde *nicht am Business Value* gemessen, den er/sie geschaffen hat, sondern an der *Vervollständigung* des Backlogs (genauso das Team).
 
-Dadurch ergab sich ein Backlog, wo jede Story ein Acceptance Test für der [Product Owner](/kb/product-owner) ist, wo er messen konnte ob die Story den vordefinierten Screen umsetzt.
+Dadurch ergab sich ein Backlog, wo jede Story ein Acceptance Test für den [Product Owner](/kb/product-owner) war, wo er messen konnte ob die Story den vordefinierten Screen umgesetzt hat.
 
 Dadurch waren es kleine, nicht zusammenhängende Stories, die dem Team nie ein gesamtes Produktkonzept zeigten.
 
