@@ -38,7 +38,7 @@ Man braucht nicht wirklich viel für eine Retrospektive und du besitzt das Meist
 
 Der Retrospective-Leader begrüßt alle Teilnehmer und dankt den Teilnehmern, dass sie sich Zeit genommen haben.
 
-Bei der ersten Retrospektive ist es auch wesentlich hier nochmal festzuhalten, dass es in der Retrospektive nicht darum geht, das man jemanden die Schuld gibt, für das was was nicht gut gelaufen ist. Wir nehmen an der Retrospektive teil, weil wir verbessern wollen, wie wir arbeiten.
+Bei der ersten Retrospektive ist es auch wesentlich hier nochmal festzuhalten, dass es in der Retrospektive nicht darum geht, das man jemanden die Schuld gibt, für das was nicht gut gelaufen ist. Wir nehmen an der Retrospektive teil, weil wir verbessern wollen wie wir arbeiten.
 
 Ich persönlich beginne hier gerne damit, das ich jeden Teilnehmer um eine kurze Wortmeldung bitte. Wenn wir z.B. über den letzten Scrum-Sprint reden, dann frage ich die Teilnehmer nach einem Wort oder einer Phrase zum letzten Sprint. Wichtig ist mir hier, dass jeder Teilnehmer irgendetwas sagt. Ich habe die Erfahrung gemacht, dass so später bei den Aktivitäten alle aktiver mitarbeiten, wenn einmal das Schweigen gebrochen wurde.
 
