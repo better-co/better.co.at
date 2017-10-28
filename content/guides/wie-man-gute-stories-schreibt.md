@@ -15,7 +15,7 @@ Meistens hat man ein bestimmtes Format dafür: “Als _____ möchte ich _____, d
 
 Hier ein kleines Beispiel:
 
-„Als ein Familienvater möchte ich Veranstaltungstipps in meiner Nähe sehen können, damit ich herausfinden kann was ich in meiner Nähe mit meiner Familie für Aktivitäten gibt, die ich machen kann.”
+„Als ein Familienvater möchte ich Veranstaltungstipps in meiner Nähe sehen können, damit ich herausfinden kann welche Aktivitäten ich in meiner Nähe mit meiner Familie machen kann.”
 
 Ich bin also beim Kickoff dieses Projektes und es gibt bereits ein Backlog.
 
