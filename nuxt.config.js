@@ -1,4 +1,5 @@
 require('dotenv').config()
+const axios = require('axios')
 
 module.exports = {
   /*
@@ -8,6 +9,7 @@ module.exports = {
     '@nuxtjs/dotenv',
     '@nuxtjs/google-analytics',
     '@nuxtjs/pwa',
+    '@nuxtjs/sitemap',
     'nuxtent',
     '~/modules/podcast',
     '~/modules/algolia'
@@ -128,5 +130,25 @@ module.exports = {
   manifest: {
     name: 'better.co.at',
     lang: 'de'
+  },
+  /*
+  ** Sitemap
+  */
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://better.co.at',
+    routes: () => {
+      return axios.get('http://localhost:3000/content-api').then(res => {
+        return res.data['content-endpoints']
+      }).then(endpoints => {
+        return Promise.all(endpoints.map(endpoint => {
+          return axios.get(`http://localhost:3000/content-api${endpoint}`)
+        }))
+      }).then(endpoints => {
+        return endpoints.reduce((routes, endpoint) => {
+          return routes.concat(endpoint.data.map(page => page.permalink))
+        }, [])
+      })
+    }
   }
 }
