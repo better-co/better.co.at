@@ -1,5 +1,8 @@
-require('dotenv').config()
+const fs = require('fs')
+const path = require('path')
 const axios = require('axios')
+
+fs.existsSync(path.resolve(__dirname, '.env')) && require('dotenv').config()
 
 module.exports = {
   /*
@@ -137,6 +140,7 @@ module.exports = {
   sitemap: {
     path: '/sitemap.xml',
     hostname: 'https://better.co.at',
+    generate: true,
     routes: () => {
       return axios.get('http://localhost:3000/content-api').then(res => {
         return res.data['content-endpoints']

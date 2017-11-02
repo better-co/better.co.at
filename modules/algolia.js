@@ -71,13 +71,14 @@ class NuxtentIndexer {
 
 module.exports = function algoliaModule (moduleOptions) {
   const options = Object.assign({}, defaults, this.options.algolia, moduleOptions)
-  const nuxtentConfig = require(path.resolve(this.options.srcDir, 'nuxtent.config.js'))
-  const client = algolia(options.appId, options.appKey)
-  const indexer = new NuxtentIndexer(client, nuxtentConfig)
 
   this.nuxt.plugin('build', builder => {
-    this.nuxt.plugin('generator', (generator) => {
+    this.nuxt.plugin('generator', generator => {
       generator.plugin('generate', ({ routes }) => {
+        const nuxtentConfig = require(path.resolve(this.options.srcDir, 'nuxtent.config.js'))
+        const client = algolia(options.appId, options.appKey)
+        const indexer = new NuxtentIndexer(client, nuxtentConfig)
+
         // Run the indexer only when nuxt generate is run
         return indexer.index()
       })
