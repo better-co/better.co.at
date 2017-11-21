@@ -38,7 +38,7 @@ module.exports = function podcastModule (moduleOptions) {
 function createPodcastFeed (options, episodes) {
   const feed = new RSS({
     title: 'bettercast — besser gemeinsam erfolgreich arbeiten',
-    description: 'Ein Talk über Erfahrungen mit agilen Methoden.',
+    description: 'Ein Talk über Erfahrungen mit agilen Management Methoden.',
     feed_url: 'https://better.co.at/bettercast.xml',
     site_url: 'https://better.co.at/bettercast',
     image_url: 'https://assets.better.co.at/bettercast/cover.png',

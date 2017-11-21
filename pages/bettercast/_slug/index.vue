@@ -7,13 +7,22 @@
       <nuxtent-body :body="episode.body" class="s-article"></nuxtent-body>
 
       <div class="player">
-        <audio :src="episode.enclosure.url" controls></audio>
+        <audio :src="episode.enclosure.url" controls preload="none"></audio>
       </div>
 
       <div>
         <a :href="episode.enclosure.url" :download="download(episode)" class="c-btn c-btn--default">
+          <i class="fa fa-cloud-download"></i>
           Download
         </a>
+        <a href="/bettercast.xml" class="c-btn c-btn--default">
+          <i class="fa fa-rss"></i>
+          RSS Feed
+        </a>
+        <!-- <a href="" class="c-btn c-btn--default">
+          <i class="fab fa-itunes-note"></i>
+          Auf iTunes abonnieren
+        </a> -->
       </div>
 
       <h2>Mit folgenden Personen</h2>
