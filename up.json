@@ -1,0 +1,17 @@
+{
+  "name": "better-co",
+  "profile": "better-co-apex",
+  "hooks": {
+    "build": [
+      "make",
+      "echo '' > .env",
+      "nuxt build"
+    ]
+  },
+  "lambda": {
+    "memory": 256
+  },
+  "proxy": {
+    "command": "./node-v8.9.0-linux-x64/bin/node node_modules/.bin/nuxt start"
+  }
+}
