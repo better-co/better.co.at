@@ -11,7 +11,7 @@
       </div>
 
       <p class="dark-blue-muted">
-        &copy; 2017 Ing. Christoph Hochstrasser
+        &copy; 2018 Ing. Christoph Hochstrasser
       </p>
       <p>
         <a href="https://github.com/hochstrasserio/agb">
