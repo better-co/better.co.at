@@ -17,6 +17,12 @@
         <a href="https://github.com/hochstrasserio/agb">
           AGB<i class="fa fa-fw fa-angle-right"></i>
         </a>
+        <a href="https://www.iubenda.com/privacy-policy/77449137">
+          Datenschutz<i class="fa fa-fw fa-angle-right"></i>
+        </a>
+        <a href="https://www.iubenda.com/privacy-policy/77449137/cookie-policy">
+          Cookies<i class="fa fa-fw fa-angle-right"></i>
+        </a>
         <nuxt-link to="/imprint">
           Impressum<i class="fa fa-fw fa-angle-right"></i>
         </nuxt-link>
