@@ -10,7 +10,7 @@ Ungefähr 1 Stunde für ein Backlog
 
 ## Was brauchst du dazu
 
-- Gemeinsame Festlegung der T-Shirt Größen, zum Beispiel:
+- Gemeinsame Festlegung der T-Shirt Größen, z.B.:
 	- S
 	- M
 	- L
